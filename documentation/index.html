@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Documentation produced by the Html generator of Bouml (http://www.bouml.fr) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>EvaluationTP
+Documentation</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body bgcolor="#ffffff">
+
+<div class = "title">EvaluationTP<br />Documentation</div>
+<p></p>
+
+<!-- ============================================================= -->
+
+<a name="ref22_129"></a>
+<p>Properties:</p><ul>
+<li>html dir:<br /><div class="sub">/home/philippe/Documents/EvaluationTP/documentation/</div></li>
+</ul>
+<a name="ref22_128064"></a>
+<h1 class ="package">1 Package evaluation</h1>
+<div class="sub">
+<a name="ref19_128064"></a>
+<h2 class ="view">1.1 Use Case View evaluation</h2>
+<div class="sub">
+<a name="ref11_128064"></a>
+<p align="center"><img src="fig128064.png" alt="" /></p>
+ <p align="center"><b>evaluation</b></p><p><br /></p><p><br /></p>
+<table><tr><td><div class="element">Class <b><a href="class128064.html#ref4_128064"><b>Enseignant</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class128320.html#ref4_128320"><b>Installateur</b></a></b></div></td></tr></table>
+<a name="ref5_128064"></a>
+<h3 class ="usecase">1.1.1 Use Case Noter un étudiant</h3>
+<p>Properties:</p><ul>
+<li>Description:<br /><div class="sub">Le cas d'utilisation commence quand <br />1. l'enseignant sélectionne une classe<br />2. sélectionne un étudiant<br />3. déplace les curseurs de compétences<br />4. valide les compétences<br />5. enregistre les compétences de la classe</div></li>
+<li>Exceptions:<br /><div class="sub">Ressources innaccessibles: Proposition de sauvegarde sur un cloud.</div></li>
+<li>Pre-Conditions:<br /><div class="sub">Les classes sont constituées<br />Les compétences définies</div></li>
+<li>Summary:<br /><div class="sub">Saisir une note pour un étudiant</div></li>
+<li>Context:<br /><div class="sub"></div></li>
+<li>Post-Conditions:<br /><div class="sub">Les notes de la classe sont sauvegardées</div></li>
+</ul>
+<div class="sub">
+<a name="ref12_141248"></a>
+<p align="center"><img src="fig141248.png" alt="" /></p>
+ <p align="center"><b>Noter un étudiant</b></p><p><br /></p><p><br /></p>
+</div>
+<a name="ref5_128192"></a>
+<h3 class ="usecase">1.1.2 Use Case Consulter les notes</h3>
+<p>Properties:</p><ul>
+<li>Description:<br /><div class="sub">Le cas d'utilisation commence quand :<br />1. l'enseignant sélectionne un devoir<br />2a. il exporte les notes dans un fichier texte utilisable par un tableur</div></li>
+<li>Exceptions:<br /><div class="sub">Pb d'accès à la base de données : Affichage d'un msg<br />Pb d'écriture lors de l'export : Affichage d'un msg</div></li>
+<li>Pre-Conditions:<br /><div class="sub">Les notes sont sauvegardées</div></li>
+<li>Summary:<br /><div class="sub">Consultation des notes</div></li>
+<li>Context:<br /><div class="sub"></div></li>
+<li>Post-Conditions:<br /><div class="sub"></div></li>
+</ul>
+<div class="sub">
+<a name="ref12_141504"></a>
+<p align="center"><img src="fig141504.png" alt="" /></p>
+ <p align="center"><b>Consulter les notes</b></p><p><br /></p><p><br /></p>
+</div>
+<a name="ref5_128320"></a>
+<h3 class ="usecase">1.1.3 Use Case Créer une classe</h3>
+<p>Properties:</p><ul>
+<li>Description:<br /><div class="sub">Le cas d'utilisation commence quand :<br />1. l'enseignant clique sur l'icône ajouter une classe<br />2. il saisie le nom de la classe<br />3. il clique sur l'icone ajouter un étudiant<br />4. il renseigne les champs nom et prénom<br />5. il recommence les étapes jusqu'à la fin de la liste<br />6. il enregistre dans la BDD</div></li>
+<li>Exceptions:<br /><div class="sub">Pas d'accès à la BDD : Affichage d'un message d'erreur.<br />La classe existe: 2b. Affichage de la classe.</div></li>
+<li>Pre-Conditions:<br /><div class="sub">La connexion à la base de données existe.</div></li>
+<li>Summary:<br /><div class="sub">Création de classe</div></li>
+<li>Context:<br /><div class="sub"></div></li>
+<li>Post-Conditions:<br /><div class="sub">La liste de la classe est enregistrée.</div></li>
+</ul>
+<div class="sub">
+<a name="ref12_141632"></a>
+<p align="center"><img src="fig141632.png" alt="" /></p>
+ <p align="center"><b>Créer une classe</b></p><p><br /></p><p><br /></p>
+</div>
+<a name="ref5_128448"></a>
+<h3 class ="usecase">1.1.4 Use Case Modifier une classe</h3>
+<p>Properties:</p><ul>
+<li>Description:<br /><div class="sub">le cas d'utilisation commence quand <br />1 l'utilisateur sélectionne une classe<br />1a l'utilisateur change le nom de la classe<br />2 l' utilisateur sélectionne le champs d'un étudiant<br />2a l'utilisateur change les données  de l'étudiant<br />2b l'utilisateur recommence l'étape  2 et 2a pour les étudiant concernés<br />3 l'utilisateur enregistre les nouvelle donnes </div></li>
+<li>Exceptions:<br /><div class="sub">pas accès a la classe : affichage d'erreur</div></li>
+<li>Pre-Conditions:<br /><div class="sub">existence d'une classe </div></li>
+<li>Summary:<br /><div class="sub"></div></li>
+<li>Context:<br /><div class="sub"></div></li>
+<li>Post-Conditions:<br /><div class="sub">la classe modifier est enregistre </div></li>
+</ul>
+<div class="sub">
+<a name="ref12_154816"></a>
+<p align="center"><img src="fig154816.png" alt="" /></p>
+ <p align="center"><b>Modifier une classe</b></p><p><br /></p><p><br /></p>
+</div>
+<a name="ref5_128576"></a>
+<h3 class ="usecase">1.1.5 Use Case Supprimer une classe</h3>
+<p>Properties:</p><ul>
+<li>Description:<br /><div class="sub">Le cas d'utilisation commence quand:<br />1. l'enseignant sélectionne une classe<br />2/ après sélection d'une ou plusieurs classe<br />3/ il clique sur le bouton supprimer classe<br />4/ la ou les classes serrons supprimer de la BDD</div></li>
+<li>Exceptions:<br /><div class="sub">il n'y a aucune classe</div></li>
+<li>Pre-Conditions:<br /><div class="sub">Avoir ouvert le logiciel <br />Les classes sont constituées</div></li>
+<li>Summary:<br /><div class="sub"></div></li>
+<li>Context:<br /><div class="sub">Vouloir supprimer une classe en fin d'année </div></li>
+<li>Post-Conditions:<br /><div class="sub">Les modifications sont sauvegardées dans la BDD</div></li>
+</ul>
+<div class="sub">
+<a name="ref12_154944"></a>
+<p align="center"><img src="fig154944.png" alt="" /></p>
+ <p align="center"><b>Supprimer une classe</b></p><p><br /></p><p><br /></p>
+</div>
+<a name="ref5_128704"></a>
+<h3 class ="usecase">1.1.6 Use Case Créer des critères</h3>
+<p>Properties:</p><ul>
+<li>Description:<br /><div class="sub">- le cas d'utilisation commence quand :<br />1. l'enseignant clique sur l'icone ajouter un critère.<br />2. il saisie le nom du critère.<br />3. il clique sur enregistré ce qui enregistre dans la BDD.<br /></div></li>
+<li>Exceptions:<br /><div class="sub">1. le critère existe déjà : affichage du critère existant.<br />2. problème d'accès a la BDD : affichage d'un msg d'erreur.</div></li>
+<li>Pre-Conditions:<br /><div class="sub">1. connexion a la BDD existe.</div></li>
+<li>Summary:<br /><div class="sub"></div></li>
+<li>Context:<br /><div class="sub">1. création d'un critères.</div></li>
+<li>Post-Conditions:<br /><div class="sub">1. le(s) différents critères sont enregistré.</div></li>
+</ul>
+<div class="sub">
+<a name="ref12_148160"></a>
+<p align="center"><img src="fig148160.png" alt="" /></p>
+ <p align="center"><b>Créer des critères</b></p><p><br /></p><p><br /></p>
+</div>
+<a name="ref5_128832"></a>
+<h3 class ="usecase">1.1.7 Use Case Modifier des critères</h3>
+<p>Properties:</p><ul>
+<li>Description:<br /><div class="sub">Le cas d'utilisation commence quand :<br />1.on sélection la case des critères .<br />2 .on clique sur la case critère pour modifié.<br />3.on ajoute la modification .<br />4.cette modification sera sauvegarder dans le BDD.</div></li>
+<li>Exceptions:<br /><div class="sub">1. il y a un ou plusieurs critère prise en conte .<br />2.Proposition de sauvegarde sur un cloud.</div></li>
+<li>Pre-Conditions:<br /><div class="sub">La connexion à la base de données existe.</div></li>
+<li>Summary:<br /><div class="sub">Création de critère </div></li>
+<li>Context:<br /><div class="sub"></div></li>
+<li>Post-Conditions:<br /><div class="sub">La liste du  critère est enregistrée.</div></li>
+</ul>
+<a name="ref5_128960"></a>
+<h3 class ="usecase">1.1.8 Use Case Supprimer des critères</h3>
+<p>Properties:</p><ul>
+<li>Description:<br /><div class="sub">Le cas d'utilisation commence quand :<br />1/ l'enseignant clique sur l'icone supprimer un critère.<br />2/ il sélectionne le ou les critère(s).<br />3/ il clique sur enregistré ce qui enregistre la modification ( suppression)dans la BDD.</div></li>
+<li>Exceptions:<br /><div class="sub">1/ problème d'accès a la BDD : affichage d'un msg d'erreur.<br /></div></li>
+<li>Pre-Conditions:<br /><div class="sub">1/ connexion établie avec la BDD.<br /></div></li>
+<li>Summary:<br /><div class="sub"></div></li>
+<li>Context:<br /><div class="sub"></div></li>
+<li>Post-Conditions:<br /><div class="sub">1/ le(s) différent(s) modifications sont enregistré.</div></li>
+</ul>
+<a name="ref5_129088"></a>
+<h3 class ="usecase">1.1.9 Use Case Créer d'un devoir</h3>
+<p>Properties:</p><ul>
+<li>Description:<br /><div class="sub">Le cas d'utilisation commence quand<br /><br />1. L'enseignant clique sur "Créer Devoir"<br />2. sélectionne le type de devoir<br />3. rentre le titre du devoir<br />4. ajoute une ou des classes<br />4. remplit le devoir et indique le barème<br />5. enregistre le devoir</div></li>
+<li>Exceptions:<br /><div class="sub">- titre déjà existant : message d'erreur<br />- classe</div></li>
+<li>Pre-Conditions:<br /><div class="sub"></div></li>
+<li>Summary:<br /><div class="sub">Créer un devoir pour une classe</div></li>
+<li>Context:<br /><div class="sub"></div></li>
+<li>Post-Conditions:<br /><div class="sub">Le devoir est sauvegardé dans la BDD</div></li>
+</ul>
+<div class="sub">
+<a name="ref12_148288"></a>
+<p align="center"><img src="fig148288.png" alt="" /></p>
+ <p align="center"><b>Créer un devoir</b></p><p><br /></p><p><br /></p>
+</div>
+<a name="ref5_129216"></a>
+<h3 class ="usecase">1.1.10 Use Case Parametrer le logiciel</h3>
+<a name="ref39_134592"></a>
+<h3 class ="activity">1.1.11 Activity ihm</h3>
+<div class="sub">
+<a name="ref17_134720"></a>
+<p align="center"><img src="fig134720.png" alt="" /></p>
+ <p align="center"><b>ihm</b></p><p><br /></p><p><br /></p>
+<a name="ref67_134592"></a>
+<table><tr><td><div class="element">Activity object <b>Accueil</b></div></td></tr></table>
+<p>Type : </p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134592"><b>Accueil</b></a> To <a href="index.html#ref67_134720"><b>Paramètrer</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134592"><b>Accueil</b></a> To <a href="index.html#ref67_134848"><b>Créer une classe</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134592"><b>Accueil</b></a> To <a href="index.html#ref67_134976"><b>Modififier une classe</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134592"><b>Accueil</b></a> To <a href="index.html#ref67_135104"><b>Créer un devoir</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134592"><b>Accueil</b></a> To <a href="index.html#ref67_135488"><b>Modifier/supprimer un critère</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134592"><b>Accueil</b></a> To <a href="index.html#ref67_135616"><b>Noter étudiant</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134592"><b>Accueil</b></a> To <a href="index.html#ref67_135744"><b>Consulter notes</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134592"><b>Accueil</b></a> To <a href="index.html#ref76_135616"><b>join activity node</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134592"><b>Accueil</b></a> To <a href="index.html#ref67_142272"><b>Supprimer une classe</b></a></p></div>
+<a name="ref67_134720"></a>
+<table><tr><td><div class="element">Activity object <b>Paramètrer</b></div></td></tr></table>
+<p>Type : </p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134720"><b>Paramètrer</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134720"><b>Paramètrer</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p></div>
+<a name="ref70_134592"></a>
+<a name="ref70_134592"></a>
+<table><tr><td><div class="element">Initial activity node <b></b></div></td></tr></table>
+<p>Defined in <a href="index.html#ref39_134592"><b>ihm</b></a></p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref70_134592"><b>initial activity node</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref70_134592"><b>initial activity node</b></a> To <a href="index.html#ref75_134976"><b>fork activity node</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref70_134592"><b>initial activity node</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p></div>
+<a name="ref75_134720"></a>
+<a name="ref75_134720"></a>
+<table><tr><td><div class="element">Fork activity node <b></b></div></td></tr></table>
+<p>Defined in <a href="index.html#ref39_134592"><b>ihm</b></a></p><a name="ref73_134848"></a>
+<a name="ref73_134848"></a>
+<table><tr><td><div class="element">Decision activity node <b></b></div></td></tr></table>
+<p>Defined in <a href="index.html#ref39_134592"><b>ihm</b></a></p><a name="ref75_134976"></a>
+<a name="ref75_134976"></a>
+<table><tr><td><div class="element">Fork activity node <b></b></div></td></tr></table>
+<p>Defined in <a href="index.html#ref39_134592"><b>ihm</b></a></p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref75_134976"><b>fork activity node</b></a> To <a href="index.html#ref67_134720"><b>Paramètrer</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref75_134976"><b>fork activity node</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p></div>
+<a name="ref75_135104"></a>
+<a name="ref75_135104"></a>
+<table><tr><td><div class="element">Fork activity node <b></b></div></td></tr></table>
+<p>Defined in <a href="index.html#ref39_134592"><b>ihm</b></a></p><a name="ref67_134848"></a>
+<table><tr><td><div class="element">Activity object <b>Créer une classe</b></div></td></tr></table>
+<p>Type : </p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134848"><b>Créer une classe</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p></div>
+<a name="ref67_134976"></a>
+<table><tr><td><div class="element">Activity object <b>Modififier une classe</b></div></td></tr></table>
+<p>Type : </p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_134976"><b>Modififier une classe</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p></div>
+<a name="ref67_135104"></a>
+<table><tr><td><div class="element">Activity object <b>Créer un devoir</b></div></td></tr></table>
+<p>Type : </p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_135104"><b>Créer un devoir</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_135104"><b>Créer un devoir</b></a> To <a href="index.html#ref67_135232"><b>Choisir critères</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_135104"><b>Créer un devoir</b></a> To <a href="index.html#ref67_135360"><b>Ajouter critère</b></a></p></div>
+<a name="ref67_135232"></a>
+<table><tr><td><div class="element">Activity object <b>Choisir critères</b></div></td></tr></table>
+<p>Type : </p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_135232"><b>Choisir critères</b></a> To <a href="index.html#ref67_135104"><b>Créer un devoir</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_135232"><b>Choisir critères</b></a> To <a href="index.html#ref67_135360"><b>Ajouter critère</b></a></p></div>
+<a name="ref67_135360"></a>
+<table><tr><td><div class="element">Activity object <b>Ajouter critère</b></div></td></tr></table>
+<p>Type : </p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_135360"><b>Ajouter critère</b></a> To <a href="index.html#ref67_135232"><b>Choisir critères</b></a></p><table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_135360"><b>Ajouter critère</b></a> To <a href="index.html#ref67_135104"><b>Créer un devoir</b></a></p></div>
+<a name="ref67_135488"></a>
+<table><tr><td><div class="element">Activity object <b>Modifier/supprimer un critère</b></div></td></tr></table>
+<p>Type : </p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_135488"><b>Modifier/supprimer un critère</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p></div>
+<a name="ref67_135616"></a>
+<table><tr><td><div class="element">Activity object <b>Noter étudiant</b></div></td></tr></table>
+<p>Type : </p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_135616"><b>Noter étudiant</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p></div>
+<a name="ref67_135744"></a>
+<table><tr><td><div class="element">Activity object <b>Consulter notes</b></div></td></tr></table>
+<p>Type : </p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_135744"><b>Consulter notes</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p></div>
+<a name="ref72_135232"></a>
+<a name="ref72_135232"></a>
+<table><tr><td><div class="element">Activity final <b></b></div></td></tr></table>
+<p>Defined in <a href="index.html#ref39_134592"><b>ihm</b></a></p><a name="ref71_135360"></a>
+<a name="ref71_135360"></a>
+<table><tr><td><div class="element">Flow final <b></b></div></td></tr></table>
+<p>Defined in <a href="index.html#ref39_134592"><b>ihm</b></a></p><a name="ref72_135488"></a>
+<a name="ref72_135488"></a>
+<table><tr><td><div class="element">Activity final <b></b></div></td></tr></table>
+<p>Defined in <a href="index.html#ref39_134592"><b>ihm</b></a></p><a name="ref76_135616"></a>
+<a name="ref76_135616"></a>
+<table><tr><td><div class="element">Join activity node <b></b></div></td></tr></table>
+<p>Defined in <a href="index.html#ref39_134592"><b>ihm</b></a></p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref76_135616"><b>join activity node</b></a> To <a href="index.html#ref72_135488"><b>activity final</b></a></p></div>
+<a name="ref72_135744"></a>
+<a name="ref72_135744"></a>
+<table><tr><td><div class="element">Activity final <b></b></div></td></tr></table>
+<p>Defined in <a href="index.html#ref39_134592"><b>ihm</b></a></p><a name="ref67_142272"></a>
+<table><tr><td><div class="element">Activity object <b>Supprimer une classe</b></div></td></tr></table>
+<p>Type : </p><div class="sub">
+<table><tr><td><div class="element">Flow  <b>&lt;flow&gt;</b></div></td></tr></table><p>From <a href="index.html#ref67_142272"><b>Supprimer une classe</b></a> To <a href="index.html#ref67_134592"><b>Accueil</b></a></p></div>
+</div>
+</div>
+<a name="ref18_128064"></a>
+<h2 class ="view">1.2 Class View evaluation</h2>
+<div class="sub">
+<a name="ref10_141376"></a>
+<p align="center"><img src="fig141376.png" alt="" /></p>
+ <p align="center"><b>evaluation</b></p><p><br /></p><p><br /></p>
+<table><tr><td><div class="element">Class <b><a href="class134976.html#ref4_134976"><b>EvaluationTP</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class135104.html#ref4_135104"><b>ihmNoter</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class134848.html#ref4_134848"><b>ihmAccueil</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class135232.html#ref4_135232"><b>ihmConsulterNotes</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class135488.html#ref4_135488"><b>ihmCréerClasse</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class142016.html#ref4_142016"><b>ihmCreerDevoir</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class148544.html#ref4_148544"><b>ihmCreerCritere</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class148672.html#ref4_148672"><b>ihmModifierClasse</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class148800.html#ref4_148800"><b>ihmSupprimerClasse</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class135360.html#ref4_135360"><b>SystèmeFichiers</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class128192.html#ref4_128192"><b>BDD</b></a></b></div></td></tr></table>
+</div>
+</div>
+</body>
+</html>

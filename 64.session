@@ -1,0 +1,29 @@
+window_sizes 1920 1016 378 1536 889 68
+cleanlooks_style
+diagrams
+  usecasediagram_ref 128064 // evaluation
+    778 577 100 A4 0 0
+  sequencediagram_ref 141248 // Noter un étudiant
+    124 120 100 A4 0 0
+  classdiagram_ref 141376 // evaluation
+    1613 889 100 A4 0 0
+  sequencediagram_ref 141504 // Consulter les notes
+    124 120 100 A4 0 0
+  sequencediagram_ref 141632 // Créer une classe
+    1613 889 100 A4 0 0
+  sequencediagram_ref 148160 // Créer des critères
+    1290 711 100 A4 0 0
+  active  sequencediagram_ref 148288 // Créer un devoir
+    1536 889 100 A4 0 0
+end
+show_stereotypes
+open
+  usecase_ref 128064 // Noter un étudiant
+  usecase_ref 128704 // Créer des critères
+  usecase_ref 128832 // Modifier des critères
+  usecase_ref 129088 // Créer d'un devoir
+  class_ref 134848 // ihmAccueil
+  class_ref 142016 // ihmCreerDevoir
+  class_ref 128192 // BDD
+end
+end

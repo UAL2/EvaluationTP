@@ -1,0 +1,1885 @@
+format 221
+"evaluation" // evaluation
+  revision 8
+  modified_by 64 "philippe"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  usecaseview 128064 "evaluation"
+    
+    usecasediagramsettings end
+    
+    sequencediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    activitydiagramsettings
+     end
+    usecasediagram 128064 "evaluation"
+      usecasediagramsettings end
+      size A4
+    end
+
+    class 128064 "Enseignant"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 128320 "Installateur"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    usecase 128064 "Noter un étudiant"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value "Saisir une note pour un étudiant"
+      key "Context" value ""
+      key "Pre-Conditions" value "Les classes sont constituées
+Les compétences définies"
+      key "Description" value "Le cas d'utilisation commence quand 
+1. l'enseignant sélectionne une classe
+2. sélectionne un étudiant
+3. déplace les curseurs de compétences
+4. valide les compétences
+5. enregistre les compétences de la classe"
+      key "Post-Conditions" value "Les notes de la classe sont sauvegardées"
+      key "Exceptions" value "Ressources innaccessibles: Proposition de sauvegarde sur un cloud."
+      sequencediagram 141248 "Noter un étudiant"
+	sequencediagramsettings end
+	overlapping_bars size A4
+      end
+    end
+
+    usecase 128192 "Consulter les notes"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value "Consultation des notes"
+      key "Context" value ""
+      key "Pre-Conditions" value "Les notes sont sauvegardées"
+      key "Description" value "Le cas d'utilisation commence quand :
+1. l'enseignant sélectionne un devoir
+2a. il exporte les notes dans un fichier texte utilisable par un tableur"
+      key "Post-Conditions" value ""
+      key "Exceptions" value "Pb d'accès à la base de données : Affichage d'un msg
+Pb d'écriture lors de l'export : Affichage d'un msg"
+      sequencediagram 141504 "Consulter les notes"
+	sequencediagramsettings end
+	overlapping_bars size A4
+      end
+    end
+
+    usecase 128320 "Créer une classe"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value "Création de classe"
+      key "Context" value ""
+      key "Pre-Conditions" value "La connexion à la base de données existe."
+      key "Description" value "Le cas d'utilisation commence quand :
+1. l'enseignant clique sur l'icône ajouter une classe
+2. il saisie le nom de la classe
+3. il clique sur l'icone ajouter un étudiant
+4. il renseigne les champs nom et prénom
+5. il recommence les étapes jusqu'à la fin de la liste
+6. il enregistre dans la BDD"
+      key "Post-Conditions" value "La liste de la classe est enregistrée."
+      key "Exceptions" value "Pas d'accès à la BDD : Affichage d'un message d'erreur.
+La classe existe: 2b. Affichage de la classe."
+      sequencediagram 141632 "Créer une classe"
+	sequencediagramsettings end
+	overlapping_bars size A4
+      end
+    end
+
+    usecase 128448 "Modifier une classe"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value ""
+      key "Context" value ""
+      key "Pre-Conditions" value "existence d'une classe "
+      key "Description" value "le cas d'utilisation commence quand 
+1 l'utilisateur sélectionne une classe
+1a l'utilisateur change le nom de la classe
+2 l' utilisateur sélectionne le champs d'un étudiant
+2a l'utilisateur change les données  de l'étudiant
+2b l'utilisateur recommence l'étape  2 et 2a pour les étudiant concernés
+3 l'utilisateur enregistre les nouvelle donnes "
+      key "Post-Conditions" value "la classe modifier est enregistre "
+      key "Exceptions" value "pas accès a la classe : affichage d'erreur"
+      sequencediagram 154816 "Modifier une classe"
+	sequencediagramsettings end
+	overlapping_bars size A4
+      end
+    end
+
+    usecase 128576 "Supprimer une classe"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value ""
+      key "Context" value "Vouloir supprimer une classe en fin d'année "
+      key "Pre-Conditions" value "Avoir ouvert le logiciel 
+Les classes sont constituées"
+      key "Description" value "Le cas d'utilisation commence quand:
+1. l'enseignant sélectionne une classe
+2/ après sélection d'une ou plusieurs classe
+3/ il clique sur le bouton supprimer classe
+4/ la ou les classes serrons supprimer de la BDD"
+      key "Post-Conditions" value "Les modifications sont sauvegardées dans la BDD"
+      key "Exceptions" value "il n'y a aucune classe"
+      sequencediagram 154944 "Supprimer une classe"
+	sequencediagramsettings end
+	overlapping_bars size A4
+      end
+    end
+
+    usecase 128704 "Créer des critères"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value ""
+      key "Context" value "1. création d'un critères."
+      key "Pre-Conditions" value "1. connexion a la BDD existe."
+      key "Description" value "- le cas d'utilisation commence quand :
+1. l'enseignant clique sur l'icone ajouter un critère.
+2. il saisie le nom du critère.
+3. il clique sur enregistré ce qui enregistre dans la BDD.
+"
+      key "Post-Conditions" value "1. le(s) différents critères sont enregistré."
+      key "Exceptions" value "1. le critère existe déjà : affichage du critère existant.
+2. problème d'accès a la BDD : affichage d'un msg d'erreur."
+      sequencediagram 148160 "Créer des critères"
+	sequencediagramsettings end
+	overlapping_bars size A4
+      end
+    end
+
+    usecase 128832 "Modifier des critères"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value "Création de critère "
+      key "Context" value ""
+      key "Pre-Conditions" value "La connexion à la base de données existe."
+      key "Description" value "Le cas d'utilisation commence quand :
+1.on sélection la case des critères .
+2 .on clique sur la case critère pour modifié.
+3.on ajoute la modification .
+4.cette modification sera sauvegarder dans le BDD."
+      key "Post-Conditions" value "La liste du  critère est enregistrée."
+      key "Exceptions" value "1. il y a un ou plusieurs critère prise en conte .
+2.Proposition de sauvegarde sur un cloud."
+      sequencediagram 155072 "Modifier un critère"
+	sequencediagramsettings end
+	overlapping_bars size A4
+      end
+    end
+
+    usecase 128960 "Supprimer des critères"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value ""
+      key "Context" value ""
+      key "Pre-Conditions" value "1/ connexion établie avec la BDD.
+"
+      key "Description" value "Le cas d'utilisation commence quand :
+1/ l'enseignant clique sur l'icone supprimer un critère.
+2/ il sélectionne le ou les critère(s).
+3/ il clique sur enregistré ce qui enregistre la modification ( suppression)dans la BDD."
+      key "Post-Conditions" value "1/ le(s) différent(s) modifications sont enregistré."
+      key "Exceptions" value "1/ problème d'accès a la BDD : affichage d'un msg d'erreur.
+"
+    end
+
+    usecase 129088 "Créer d'un devoir"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      ncouples 6
+      key "Summary" value "Créer un devoir pour une classe"
+      key "Context" value ""
+      key "Pre-Conditions" value ""
+      key "Description" value "Le cas d'utilisation commence quand
+
+1. L'enseignant clique sur \"Créer Devoir\"
+2. sélectionne le type de devoir
+3. rentre le titre du devoir
+4. ajoute une ou des classes
+4. remplit le devoir et indique le barème
+5. enregistre le devoir"
+      key "Post-Conditions" value "Le devoir est sauvegardé dans la BDD"
+      key "Exceptions" value "- titre déjà existant : message d'erreur
+- classe"
+      sequencediagram 148288 "Créer un devoir"
+	sequencediagramsettings end
+	overlapping_bars size A4
+      end
+    end
+
+    usecase 129216 "Parametrer le logiciel"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+    end
+
+    activity 134592 "ihm"
+      activitydiagram 134720 "ihm"
+	activitydiagramsettings draw_all_relations no
+	 end
+	size A4
+      end
+
+      activityobject 134592 "Accueil"
+	 explicit_type ""
+	unordered 
+	flow 134592 "<flow>"
+	  on activityobject_ref 134720 // activity object Paramètrer
+	end
+
+	flow 135360 "<flow>"
+	  on activityobject_ref 134848 // activity object Créer une classe
+	end
+
+	flow 135616 "<flow>"
+	  on activityobject_ref 134976 // activity object Modififier une classe
+	end
+
+	flow 135872 "<flow>"
+	  on activityobject_ref 135104 // activity object Créer un devoir
+	end
+
+	flow 136640 "<flow>"
+	  on activityobject_ref 135488 // activity object Modifier/supprimer un critère
+	end
+
+	flow 136896 "<flow>"
+	  on activityobject_ref 135616 // activity object Noter étudiant
+	end
+
+	flow 137280 "<flow>"
+	  on activityobject_ref 135744 // activity object Consulter notes
+	end
+
+	flow 137920 "<flow>"
+	  on activitynode_ref 135616 // join
+	end
+
+	flow 144576 "<flow>"
+	  on activityobject_ref 142272 // activity object Supprimer une classe
+	end
+      end
+
+      activityobject 134720 "Paramètrer"
+	 explicit_type ""
+	unordered 
+	flow 135232 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+
+	flow 137792 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+      end
+
+      activitynode 134592 initial_node ""
+	flow 134720 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+
+	flow 134848 "<flow>"
+	  on activitynode_ref 134976 // fork
+	end
+
+	flow 137664 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+      end
+
+      activitynode 134720 fork ""
+      end
+
+      activitynode 134848 decision ""
+      end
+
+      activitynode 134976 fork ""
+	flow 134976 "<flow>"
+	  on activityobject_ref 134720 // activity object Paramètrer
+	end
+
+	flow 135104 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+      end
+
+      activitynode 135104 fork ""
+      end
+
+      activityobject 134848 "Créer une classe"
+	 explicit_type ""
+	unordered 
+	flow 135488 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+      end
+
+      activityobject 134976 "Modififier une classe"
+	 explicit_type ""
+	unordered 
+	flow 135744 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+      end
+
+      activityobject 135104 "Créer un devoir"
+	 explicit_type ""
+	unordered 
+	flow 136000 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+
+	flow 136128 "<flow>"
+	  on activityobject_ref 135232 // activity object Choisir critères
+	end
+
+	flow 137408 "<flow>"
+	  on activityobject_ref 135360 // activity object Ajouter critère
+	end
+      end
+
+      activityobject 135232 "Choisir critères"
+	 explicit_type ""
+	unordered 
+	flow 136256 "<flow>"
+	  on activityobject_ref 135104 // activity object Créer un devoir
+	end
+
+	flow 136384 "<flow>"
+	  on activityobject_ref 135360 // activity object Ajouter critère
+	end
+      end
+
+      activityobject 135360 "Ajouter critère"
+	 explicit_type ""
+	unordered 
+	flow 136512 "<flow>"
+	  on activityobject_ref 135232 // activity object Choisir critères
+	end
+
+	flow 137536 "<flow>"
+	  on activityobject_ref 135104 // activity object Créer un devoir
+	end
+      end
+
+      activityobject 135488 "Modifier/supprimer un critère"
+	 explicit_type ""
+	unordered 
+	flow 136768 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+      end
+
+      activityobject 135616 "Noter étudiant"
+	 explicit_type ""
+	unordered 
+	flow 137024 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+      end
+
+      activityobject 135744 "Consulter notes"
+	 explicit_type ""
+	unordered 
+	flow 137152 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+      end
+
+      activitynode 135232 activity_final ""
+      end
+
+      activitynode 135360 flow_final ""
+      end
+
+      activitynode 135488 activity_final ""
+      end
+
+      activitynode 135616 join ""
+	flow 138048 "<flow>"
+	  on activitynode_ref 135488 // activity_final
+	end
+      end
+
+      activitynode 135744 activity_final ""
+      end
+
+      activityobject 142272 "Supprimer une classe"
+	 explicit_type ""
+	unordered 
+	flow 144704 "<flow>"
+	  on activityobject_ref 134592 // activity object Accueil
+	end
+      end
+    end
+  end
+
+  classview 128064 "evaluation"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    classdiagram 141376 "evaluation"
+      classdiagramsettings member_max_width 0 end
+      size A3
+    end
+
+    class 134976 "EvaluationTP"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 128192 "noterEtudiant"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128960 "Classe"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129984 "validerCompétences"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 128064 // <aggregation>
+	relation 128064 o---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128064 // <aggregation>
+	  b role_name "" private
+	    classrelation_ref 142016 // <aggregation>
+      end
+
+      classrelation 128192 // <aggregation>
+	relation 128192 o---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128192 // <aggregation>
+	  b role_name "" private
+	    classrelation_ref 142144 // <aggregation>
+      end
+
+      classrelation 128320 // <directional aggregation>
+	relation 128320 o-->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128320 // <directional aggregation>
+	  b parent class_ref 128192 // BDD
+      end
+
+      operation 130368 "consulterNotes"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131136 "sauverDevoir"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 128448 // <aggregation>
+	relation 128448 o---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128448 // <aggregation>
+	  b role_name "" private
+	    classrelation_ref 142272 // <aggregation>
+      end
+
+      operation 131520 "creerClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132416 "validerClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 128704 // <directional aggregation>
+	relation 128576 o-->
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 128704 // <directional aggregation>
+	  b parent class_ref 135360 // SystèmeFichiers
+      end
+
+      classrelation 135232 // <aggregation>
+	relation 135104 o---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 135232 // <aggregation>
+	  b role_name "" private
+	    classrelation_ref 142400 // <aggregation>
+      end
+
+      operation 139712 "creerDevoir"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 147776 "validerDevoir"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 141760 // <aggregation>
+	relation 141632 o---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 141760 // <aggregation>
+	  b role_name "" package
+	    classrelation_ref 142528 // <aggregation>
+      end
+
+      operation 148160 "creerCritere"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 148800 "sauverCritere"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 141888 // <aggregation>
+	relation 141760 o---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 141888 // <aggregation>
+	  b role_name "" package
+	    classrelation_ref 142656 // <aggregation>
+      end
+
+      operation 149184 "modifierClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 149696 "chercherClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 150336 "validerClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 142784 // <aggregation>
+	relation 141888 o---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 142784 // <aggregation>
+	  b role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 142912 // <aggregation>
+      end
+
+      operation 150592 "supprimerClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 151232 "validerSuppressionClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 143040 // <aggregation>
+	relation 142016 o---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 143040 // <aggregation>
+	  b role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 143168 // <aggregation>
+      end
+    end
+
+    class 135104 "ihmNoter"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 128448 "montrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128576 "afficherListeClasses"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128704 "btnClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129216 "afficherListeEtudiants"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129344 "btnEtudiant"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129472 "deplacerCurseur"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129728 "afficherCriteres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129856 "btnValider"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 142144 // <aggregation>
+	relation_ref 128192 // <aggregation>
+      end
+    end
+
+    class 134848 "ihmAccueil"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 128064 "btnNoterEtudiant"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 128320 "cacher"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130240 "btnConsulter"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131392 "btnCreerClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132288 "btnEnregistrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 139584 "btnCreerDevoir"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 142016 // <aggregation>
+	relation_ref 128064 // <aggregation>
+      end
+
+      operation 149056 "btnModifierClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 150464 "btnSupprimerClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 135232 "ihmConsulterNotes"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 130496 "montrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130752 "afficherDevoirs"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130880 "sélectionDevoir"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 131008 "btnSauvegarde"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 142272 // <aggregation>
+	relation_ref 128448 // <aggregation>
+      end
+    end
+
+    class 135488 "ihmCréerClasse"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 131648 "montrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132672 "saisirNomClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132800 "btnAjouterEtudiant"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132928 "afficherFormulaire"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 133056 "saisirChamps"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 142400 // <aggregation>
+	relation_ref 135104 // <aggregation>
+      end
+    end
+
+    class 142016 "ihmCreerDevoir"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 139840 "montrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 140480 "fournirCriteres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 140608 "selectionType"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 140736 "saisirType"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 140864 "choisirClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 147392 "choisirCritere"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 147520 "affecterCoefficient"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 147648 "btnEnregistrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 148032 "btCreerCritere"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 148416 "cacher"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 142528 // <aggregation>
+	relation_ref 141632 // <aggregation>
+      end
+    end
+
+    class 148544 "ihmCreerCritere"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 148288 "montrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 148544 "saisirNom"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 148672 "btEnregistrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 142656 // <aggregation>
+	relation_ref 141760 // <aggregation>
+      end
+    end
+
+    class 148672 "ihmModifierClasse"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 149312 "montrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 149440 "afficherListeClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 149568 "choisirClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 149824 "afficherEtudiants"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 149952 "modifierNomClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 150080 "modifierDonneesEtudiant"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 150208 "btnEnregistrerClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 142912 // <aggregation>
+	relation_ref 141888 // <aggregation>
+      end
+    end
+
+    class 148800 "ihmSupprimerClasse"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 150720 "montrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 150848 "afficherListeClasses"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 150976 "selectionClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 151104 "btnEnregistrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 143168 // <aggregation>
+	relation_ref 142016 // <aggregation>
+      end
+    end
+
+    class 135360 "SystèmeFichiers"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 131264 "enregistrerFichier"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 128192 "BDD"
+      visibility package 
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl "${comment}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl "${comment}${abstract}${custom}valuetype ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 128832 "listeClasses"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129088 "listeEtudiants"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 129600 "listeCriteres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130112 "enregistrerCompétences"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 130624 "listeDevoirs"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 132544 "enregistrerClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 140352 "listeCriteres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 147904 "enregistrerDevoir"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 148928 "enregistrerCritere"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 151360 "supprimerClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+  end
+end
