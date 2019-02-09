@@ -1,0 +1,117 @@
+format 221
+
+classinstance 128064 class_ref 128064 // Enseignant
+  name ""   xyz 2 4 2000 life_line_z 2000
+classinstance 128192 class_ref 134848 // ihmAccueil
+  name ""   xyz 220 5 2000 life_line_z 2000
+classinstance 128704 class_ref 134976 // EvaluationTP
+  name ""   xyz 517 4 2000 life_line_z 2000
+classinstance 129088 class_ref 148928 // ihmModiferSupprimerCritere
+  name ""   xyz 313 4 2000 life_line_z 2000
+classinstance 129728 class_ref 128192 // BDD
+  name ""   xyz 678 4 2000 life_line_z 2000
+fragment 130752 "loop"
+  xyzwh 30 175 2020 393 71
+end
+textcanvas 133312 "Pour chaque critere à supprimer"
+  xyzwh 57 222 2000 210 22
+durationcanvas 128320 classinstance_ref 128064 // :Enseignant
+  xyzwh 37 59 2010 11 25
+end
+durationcanvas 128448 classinstance_ref 128192 // :ihmAccueil
+  xyzwh 258 59 2010 11 26
+end
+durationcanvas 128832 classinstance_ref 128704 // :EvaluationTP
+  xyzwh 562 70 2010 11 97
+end
+durationcanvas 129216 classinstance_ref 129088 // :ihmModiferSupprimerCritere
+  xyzwh 407 94 2010 11 26
+end
+durationcanvas 129472 classinstance_ref 128192 // :ihmAccueil
+  xyzwh 258 119 2010 11 26
+end
+durationcanvas 129856 classinstance_ref 129728 // :BDD
+  xyzwh 697 133 2010 11 26
+end
+durationcanvas 130112 classinstance_ref 129088 // :ihmModiferSupprimerCritere
+  xyzwh 407 146 2010 11 25
+end
+durationcanvas 130368 classinstance_ref 128064 // :Enseignant
+  xyzwh 37 215 2010 11 25
+end
+durationcanvas 130496 classinstance_ref 129088 // :ihmModiferSupprimerCritere
+  xyzwh 407 215 2010 11 26
+end
+durationcanvas 132160 classinstance_ref 128064 // :Enseignant
+  xyzwh 37 264 2010 11 25
+end
+durationcanvas 132288 classinstance_ref 129088 // :ihmModiferSupprimerCritere
+  xyzwh 407 266 2010 11 25
+end
+durationcanvas 132800 classinstance_ref 128704 // :EvaluationTP
+  xyzwh 562 279 2010 11 28
+end
+durationcanvas 133056 classinstance_ref 129728 // :BDD
+  xyzwh 697 296 2010 11 25
+end
+msg 128576 asynchronous
+  from durationcanvas_ref 128320
+  to durationcanvas_ref 128448
+  yz 59 2015 msg operation_ref 151488 // "btnModiferSupprimerCritere()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 60 42
+msg 128960 synchronous
+  from durationcanvas_ref 128448
+  to durationcanvas_ref 128832
+  yz 70 2020 msg operation_ref 152640 // "supprimerCritere()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 436 51
+msg 129344 synchronous
+  from durationcanvas_ref 128832
+  to durationcanvas_ref 129216
+  yz 94 2015 msg operation_ref 151744 // "montrer()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 426 75
+msg 129600 synchronous
+  from durationcanvas_ref 128832
+  to durationcanvas_ref 129472
+  yz 119 2015 msg operation_ref 128320 // "cacher()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 279 99
+msg 129984 synchronous
+  from durationcanvas_ref 128832
+  to durationcanvas_ref 129856
+  yz 133 2020 msg operation_ref 129600 // "listeCriteres()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 600 111
+msg 130240 synchronous
+  from durationcanvas_ref 128832
+  to durationcanvas_ref 130112
+  yz 146 2025 msg operation_ref 151872 // "afficherCriteres()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 436 126
+msg 130624 asynchronous
+  from durationcanvas_ref 130368
+  to durationcanvas_ref 130496
+  yz 215 2015 msg operation_ref 152000 // "choisirCritere()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 302 195
+msg 132416 asynchronous
+  from durationcanvas_ref 132160
+  to durationcanvas_ref 132288
+  yz 266 2015 msg operation_ref 152896 // "btnSupprimerCriteres()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 253 248
+msg 132928 synchronous
+  from durationcanvas_ref 132288
+  to durationcanvas_ref 132800
+  yz 279 2015 msg operation_ref 153024 // "supprimerCriteres()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 427 257
+msg 133184 synchronous
+  from durationcanvas_ref 132800
+  to durationcanvas_ref 133056
+  yz 296 2020 msg operation_ref 152512 // "sauverCriteres()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 582 273
+end

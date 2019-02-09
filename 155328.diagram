@@ -1,0 +1,94 @@
+format 221
+
+classinstance 128064 class_ref 128320 // Installateur
+  name ""   xyz 3 4 2000 life_line_z 2000
+classinstance 128192 class_ref 134848 // ihmAccueil
+  name ""   xyz 140 4 2000 life_line_z 2000
+classinstance 128704 class_ref 134976 // EvaluationTP
+  name ""   xyz 351 4 2000 life_line_z 2000
+classinstance 129088 class_ref 149056 // ihmParametrer
+  name ""   xyz 232 4 2005 life_line_z 2000
+classinstance 130880 class_ref 135360 // SystèmeFichiers
+  name ""   xyz 513 4 2000 life_line_z 2000
+durationcanvas 128320 classinstance_ref 128064 // :Installateur
+  xyzwh 37 59 2010 11 40
+end
+durationcanvas 128448 classinstance_ref 128192 // :ihmAccueil
+  xyzwh 178 59 2010 11 27
+end
+durationcanvas 128832 classinstance_ref 128704 // :EvaluationTP
+  xyzwh 396 74 2010 11 63
+end
+durationcanvas 129216 classinstance_ref 129088 // :ihmParametrer
+  xyzwh 283 90 2010 11 25
+end
+durationcanvas 129472 classinstance_ref 128192 // :ihmAccueil
+  xyzwh 178 116 2010 11 25
+end
+durationcanvas 129728 classinstance_ref 128064 // :Installateur
+  xyzwh 37 162 2010 11 26
+end
+durationcanvas 129856 classinstance_ref 129088 // :ihmParametrer
+  xyzwh 283 162 2010 11 25
+end
+durationcanvas 130112 classinstance_ref 128064 // :Installateur
+  xyzwh 37 198 2010 11 25
+end
+durationcanvas 130240 classinstance_ref 129088 // :ihmParametrer
+  xyzwh 283 198 2010 11 31
+end
+durationcanvas 130496 classinstance_ref 128704 // :EvaluationTP
+  xyzwh 396 218 2010 11 27
+end
+durationcanvas 131008 classinstance_ref 130880 // :SystèmeFichiers
+  xyzwh 569 234 2010 11 25
+end
+msg 128576 asynchronous
+  from durationcanvas_ref 128320
+  to durationcanvas_ref 128448
+  yz 59 2015 msg operation_ref 153152 // "btnParametrer()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 61 37
+msg 128960 synchronous
+  from durationcanvas_ref 128448
+  to durationcanvas_ref 128832
+  yz 74 2020 msg operation_ref 153280 // "parametrer()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 244 52
+msg 129344 synchronous
+  from durationcanvas_ref 128832
+  to durationcanvas_ref 129216
+  yz 92 2025 msg operation_ref 153408 // "montrer()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 305 75
+msg 129600 synchronous
+  from durationcanvas_ref 128832
+  to durationcanvas_ref 129472
+  yz 118 2015 msg operation_ref 128320 // "cacher()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 202 99
+msg 129984 asynchronous
+  from durationcanvas_ref 129728
+  to durationcanvas_ref 129856
+  yz 162 2015 msg operation_ref 153536 // "saisirAccessBDD()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 153 143
+msg 130368 asynchronous
+  from durationcanvas_ref 130112
+  to durationcanvas_ref 130240
+  yz 198 2015 msg operation_ref 153664 // "btnValiderParametres()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 130 177
+msg 130624 synchronous
+  from durationcanvas_ref 130240
+  to durationcanvas_ref 130496
+  yz 218 2015 msg operation_ref 153792 // "validerParametres()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 304 195
+msg 131136 synchronous
+  from durationcanvas_ref 130496
+  to durationcanvas_ref 131008
+  yz 234 2015 msg operation_ref 153920 // "enregistrerParametres()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 415 213
+end

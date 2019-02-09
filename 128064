@@ -392,6 +392,10 @@ Les classes sont constituées"
       key "Post-Conditions" value "1/ le(s) différent(s) modifications sont enregistré."
       key "Exceptions" value "1/ problème d'accès a la BDD : affichage d'un msg d'erreur.
 "
+      sequencediagram 155200 "Supprimer un critère"
+	sequencediagramsettings end
+	overlapping_bars size A4
+      end
     end
 
     usecase 129088 "Créer d'un devoir"
@@ -457,6 +461,31 @@ Les classes sont constituées"
       
       activitydiagramsettings
        end
+      ncouples 6
+      key "Summary" value "les rubriques sont fluide"
+      key "Context" value "assurer un bon fonctionnement pendant l utilisation."
+      key "Pre-Conditions" value "Permet de modifier ou sauvegarder son identifiant et son mot passe."
+      key "Description" value "Le cas d'utilisation commence quand :
+1. clique sur le bouton de paramétrage.
+2. on tombe sur les paramètres: 
+-Utilisateur
+-BDD
+3. Il rentre son identifiant mot de passe .
+4. Les rubriques au choix
+-création de classe
+-modification classe
+-consulté les note
+-création devoir
+-modification critère
+-noté l'étudiant
+5. puis on valide les rubrique au choix sur la touche en bas a droite.
+6. pour terminer on clique sur la touche retour en bas a gauche."
+      key "Post-Conditions" value "Proposition de sauvegarde sur le cloud"
+      key "Exceptions" value "Problème accès : affichage de message d'erreur"
+      sequencediagram 155328 "Paramètrer le logiciel"
+	sequencediagramsettings end
+	overlapping_bars size A4
+      end
     end
 
     activity 134592 "ihm"
@@ -989,6 +1018,102 @@ ${members}}
 "
 	    classrelation_ref 143168 // <aggregation>
       end
+
+      operation 151616 "modifierCritere"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 152384 "validerCriteres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 143296 // <aggregation>
+	relation 142144 o---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 143296 // <aggregation>
+	  b role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 143424 // <aggregation>
+      end
+
+      operation 152640 "supprimerCritere"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 153024 "supprimerCriteres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 153280 "parametrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 153792 "validerParametres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 143552 // <aggregation>
+	relation 142272 o---
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 143552 // <aggregation>
+	  b role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 143680 // <aggregation>
+      end
     end
 
     class 135104 "ihmNoter"
@@ -1205,6 +1330,30 @@ ${members}}
       end
 
       operation 150464 "btnSupprimerClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 151488 "btnModiferSupprimerCritere"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 153152 "btnParametrer"
 	public explicit_return_type ""
 	nparams 0
 	
@@ -1715,6 +1864,160 @@ ${members}}
       end
     end
 
+    class 148928 "ihmModiferSupprimerCritere"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 151744 "montrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 151872 "afficherCriteres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 152000 "choisirCritere"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 152128 "modifierLibelle"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 152256 "btnEnregistrerCriteres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 143424 // <aggregation>
+	relation_ref 142144 // <aggregation>
+      end
+
+      operation 152768 "montrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 152896 "btnSupprimerCriteres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+    end
+
+    class 149056 "ihmParametrer"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 153408 "montrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 153536 "saisirAccessBDD"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 153664 "btnValiderParametres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      classrelation 143680 // <aggregation>
+	relation_ref 142272 // <aggregation>
+      end
+    end
+
     class 135360 "SystèmeFichiers"
       visibility package 
       cpp_decl ""
@@ -1728,6 +2031,18 @@ ${members}}
       mysql_decl ""
       
       operation 131264 "enregistrerFichier"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 153920 "enregistrerParametres"
 	public explicit_return_type ""
 	nparams 0
 	
@@ -1870,6 +2185,18 @@ ${members}};
       end
 
       operation 151360 "supprimerClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 152512 "sauverCriteres"
 	public explicit_return_type ""
 	nparams 0
 	
