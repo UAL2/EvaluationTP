@@ -1,6 +1,6 @@
 format 221
 "evaluation" // evaluation
-  revision 8
+  revision 11
   modified_by 64 "philippe"
   // class settings
   
@@ -1289,18 +1289,6 @@ ${members}}
 	
       end
 
-      operation 132288 "btnEnregistrer"
-	public explicit_return_type ""
-	nparams 0
-	
-	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
-  ${body}}
-"
-	
-	
-	
-      end
-
       operation 139584 "btnCreerDevoir"
 	public explicit_return_type ""
 	nparams 0
@@ -1506,6 +1494,18 @@ ${members}}
       classrelation 142400 // <aggregation>
 	relation_ref 135104 // <aggregation>
       end
+
+      operation 160448 "btnValiderClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
     end
 
     class 142016 "ihmCreerDevoir"
@@ -1556,7 +1556,7 @@ ${members}}
 	
       end
 
-      operation 140736 "saisirType"
+      operation 140736 "saisirTitre"
 	public explicit_return_type ""
 	nparams 0
 	

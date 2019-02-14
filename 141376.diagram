@@ -2,55 +2,55 @@ format 221
 
 classcanvas 128064 class_ref 128192 // BDD
   classdiagramsettings member_max_width 0 end
-  xyz 10.4 134.5 2000
+  xyz 10.7 134.3 2000
 end
 classcanvas 128192 class_ref 134976 // EvaluationTP
   classdiagramsettings member_max_width 0 end
-  xyz 449.9 10.4 2000
+  xyz 449.1 10.6 2000
 end
 classcanvas 128320 class_ref 135104 // ihmNoter
   classdiagramsettings member_max_width 0 end
-  xyz 235.3 512.4 2000
+  xyz 235.1 512.8 2000
 end
 classcanvas 128448 class_ref 134848 // ihmAccueil
   classdiagramsettings member_max_width 0 end
-  xyz 13.8 458.9 2005
+  xyz 13.4 458.7 2005
 end
 classcanvas 128960 class_ref 135232 // ihmConsulterNotes
   classdiagramsettings member_max_width 0 end
-  xyz 414.2 609.4 2000
+  xyz 414.3 609.5 2000
 end
 classcanvas 129216 class_ref 135488 // ihmCréerClasse
   classdiagramsettings member_max_width 0 end
-  xyz 742.3 193.8 2000
+  xyz 742.5 193.6 2000
 end
 classcanvas 129344 class_ref 135360 // SystèmeFichiers
   classdiagramsettings member_max_width 0 end
-  xyz 10.6 11.5 2000
+  xyz 10.8 11 2000
 end
 classcanvas 129728 class_ref 142016 // ihmCreerDevoir
   classdiagramsettings member_max_width 0 end
-  xyz 937.8 221.6 2000
+  xyz 936.1 221 2000
 end
 classcanvas 130752 class_ref 148544 // ihmCreerCritere
   classdiagramsettings member_max_width 0 end
-  xyz 755.2 10.6 2000
+  xyz 755.3 10.4 2000
 end
 classcanvas 131264 class_ref 148672 // ihmModifierClasse
   classdiagramsettings member_max_width 0 end
-  xyz 890.3 8.7 2006
+  xyz 890.2 8.3 2006
 end
 classcanvas 131520 class_ref 148800 // ihmSupprimerClasse
   classdiagramsettings member_max_width 0 end
-  xyz 567.6 609.4 2000
+  xyz 567.4 609.5 2000
 end
 classcanvas 131776 class_ref 148928 // ihmModiferSupprimerCritere
   classdiagramsettings member_max_width 0 end
-  xyz 863.9 539.9 2000
+  xyz 863.6 539.8 2000
 end
 classcanvas 132160 class_ref 149056 // ihmParametrer
   classdiagramsettings member_max_width 0 end
-  xyz 724.5 368.4 2000
+  xyz 732 399.6 2000
 end
 relationcanvas 128576 relation_ref 128064 // <aggregation>
   decenter_end 131
@@ -89,7 +89,8 @@ relationcanvas 129600 relation_ref 135104 // <aggregation>
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 129856 relation_ref 141632 // <aggregation>
-  decenter_begin 615
+  decenter_begin 663
+  decenter_end 584
   from ref 128192 z 2001 to ref 129728
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b
@@ -121,7 +122,7 @@ relationcanvas 131904 relation_ref 142144 // <aggregation>
   no_multiplicity_a no_multiplicity_b
 end
 relationcanvas 132288 relation_ref 142272 // <aggregation>
-  decenter_begin 732
+  decenter_begin 785
   from ref 128192 z 2001 to ref 132160
   no_role_a no_role_b
   no_multiplicity_a no_multiplicity_b

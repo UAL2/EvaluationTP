@@ -1,22 +1,19 @@
-window_sizes 1717 876 378 1333 749 68
+window_sizes 1920 1016 378 1536 889 68
 cleanlooks_style
 diagrams
-  sequencediagram_ref 154816 // Modifier une classe
-    124 120 100 A4 0 0
-  sequencediagram_ref 154944 // Supprimer une classe
-    124 120 100 A4 0 0
   active  classdiagram_ref 141376 // evaluation
-    1333 749 80 A3 0 0
-  sequencediagram_ref 155072 // Modifier un critère
-    124 120 100 A4 0 0
-  sequencediagram_ref 155200 // Supprimer un critère
-    124 120 100 A4 0 0
-  sequencediagram_ref 155328 // Paramètrer le logiciel
-    124 120 100 A4 0 0
+    1536 889 110 A3 0 0
+  sequencediagram_ref 141632 // Créer une classe
+    1228 711 100 A4 0 0
+  sequencediagram_ref 148288 // Créer un devoir
+    1228 711 100 A4 0 0
 end
 show_stereotypes
 selected 
   package_ref 129 // EvaluationTP
 open
+  usecase_ref 128320 // Créer une classe
+  usecase_ref 129088 // Créer d'un devoir
+  class_ref 142016 // ihmCreerDevoir
 end
 end

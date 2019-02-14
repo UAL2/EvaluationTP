@@ -30,18 +30,6 @@ end
 durationcanvas 129472 classinstance_ref 128192 // :ihmAccueil
   xyzwh 169 131 2010 11 26
 end
-durationcanvas 131776 classinstance_ref 128064 // :Enseignant
-  xyzwh 36 370 2010 11 25
-end
-durationcanvas 131904 classinstance_ref 128192 // :ihmAccueil
-  xyzwh 169 370 2010 11 28
-end
-durationcanvas 132160 classinstance_ref 128832 // :EvaluationTP
-  xyzwh 402 387 2010 11 25
-end
-durationcanvas 132544 classinstance_ref 132416 // :BDD
-  xyzwh 559 401 2010 11 25
-end
 durationcanvas 132800 classinstance_ref 128064 // :Enseignant
   xyzwh 36 174 2010 11 25
 end
@@ -62,6 +50,18 @@ durationcanvas 133824 classinstance_ref 128064 // :Enseignant
 end
 durationcanvas 133952 classinstance_ref 128320 // :ihmCréerClasse
   xyzwh 280 306 2010 11 25
+end
+durationcanvas 134208 classinstance_ref 128064 // :Enseignant
+  xyzwh 36 372 2010 11 25
+end
+durationcanvas 134336 classinstance_ref 128320 // :ihmCréerClasse
+  xyzwh 280 372 2010 11 26
+end
+durationcanvas 134592 classinstance_ref 128832 // :EvaluationTP
+  xyzwh 402 387 2010 11 25
+end
+durationcanvas 134848 classinstance_ref 132416 // :BDD
+  xyzwh 559 399 2010 11 25
 end
 msg 128704 asynchronous
   from durationcanvas_ref 128448
@@ -87,24 +87,6 @@ msg 129600 synchronous
   yz 131 2015 msg operation_ref 128320 // "cacher()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
   label_xy 192 113
-msg 132032 asynchronous
-  from durationcanvas_ref 131776
-  to durationcanvas_ref 131904
-  yz 370 2015 msg operation_ref 132288 // "btnEnregistrer()"
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 57 348
-msg 132288 synchronous
-  from durationcanvas_ref 131904
-  to durationcanvas_ref 132160
-  yz 387 2015 msg operation_ref 132416 // "validerClasse()"
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 242 365
-msg 132672 synchronous
-  from durationcanvas_ref 132160
-  to durationcanvas_ref 132544
-  yz 401 2020 msg operation_ref 132544 // "enregistrerClasse()"
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 420 381
 msg 133056 asynchronous
   from durationcanvas_ref 132800
   to durationcanvas_ref 132928
@@ -128,4 +110,22 @@ msg 134080 asynchronous
   yz 306 2015 msg operation_ref 133056 // "saisirChamps()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
   label_xy 177 288
+msg 134464 asynchronous
+  from durationcanvas_ref 134208
+  to durationcanvas_ref 134336
+  yz 372 2015 msg operation_ref 160448 // "btnValiderClasse()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 103 350
+msg 134720 synchronous
+  from durationcanvas_ref 134336
+  to durationcanvas_ref 134592
+  yz 387 2015 msg operation_ref 132416 // "validerClasse()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 297 365
+msg 134976 synchronous
+  from durationcanvas_ref 134592
+  to durationcanvas_ref 134848
+  yz 399 2020 msg operation_ref 132544 // "enregistrerClasse()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 424 377
 end

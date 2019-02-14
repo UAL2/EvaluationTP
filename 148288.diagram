@@ -128,7 +128,7 @@ msg 132416 asynchronous
 msg 132800 asynchronous
   from durationcanvas_ref 132544
   to durationcanvas_ref 132672
-  yz 243 2015 msg operation_ref 140736 // "saisirType()"
+  yz 243 2015 msg operation_ref 140736 // "saisirTitre()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
   label_xy 244 222
 msg 133184 asynchronous
