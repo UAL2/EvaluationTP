@@ -1,6 +1,6 @@
 format 221
 "evaluation" // evaluation
-  revision 11
+  revision 12
   modified_by 64 "philippe"
   // class settings
   
@@ -2209,4 +2209,10 @@ ${members}};
       end
     end
   end
+
+  package_ref 134592 // vues
+
+  package_ref 134720 // modeles
+
+  package_ref 134848 // controleur
 end
