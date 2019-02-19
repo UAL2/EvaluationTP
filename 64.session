@@ -17,11 +17,10 @@ diagrams
     124 120 100 A4 0 0
 end
 show_stereotypes
-selected 
-  package_ref 128064 // evaluation
 open
-  class_ref 155584 // Classe
-  attribute_ref 128576 // nom
+  attribute_ref 135616 // fk_idEtudiant
+  class_ref 155840 // Critere
+  class_ref 162624 // CritereDevoir
   
   package_ref 134592 // vues
 end
