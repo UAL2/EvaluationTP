@@ -1,19 +1,28 @@
-window_sizes 1920 1016 378 1536 889 68
+window_sizes 1366 704 378 982 577 68
 cleanlooks_style
 diagrams
-  active  classdiagram_ref 141376 // evaluation
-    1536 889 110 A3 0 0
+  classdiagram_ref 141376 // evaluation
+    1536 889 60 A3 0 0
   sequencediagram_ref 141632 // Créer une classe
-    1228 711 100 A4 0 0
+    982 577 100 A4 0 0
   sequencediagram_ref 148288 // Créer un devoir
     1228 711 100 A4 0 0
+  active  classdiagram_ref 161856 // bdd
+    982 577 100 A4 0 0
+  sequencediagram_ref 148160 // Créer des critères
+    124 120 100 A4 0 0
+  sequencediagram_ref 155072 // Modifier un critère
+    124 120 100 A4 0 0
+  sequencediagram_ref 155200 // Supprimer un critère
+    124 120 100 A4 0 0
 end
 show_stereotypes
 selected 
-  package_ref 129 // EvaluationTP
+  package_ref 128064 // evaluation
 open
-  usecase_ref 128320 // Créer une classe
-  usecase_ref 129088 // Créer d'un devoir
-  class_ref 142016 // ihmCreerDevoir
+  class_ref 155584 // Classe
+  attribute_ref 128576 // nom
+  
+  package_ref 134592 // vues
 end
 end
