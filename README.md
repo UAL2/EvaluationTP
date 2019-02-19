@@ -1,3 +1,3 @@
 # EvaluationTP
 Analyse UML
-![Screenshot](screenshot.png)
+![Screenshot](documentation/fig128064.png)
