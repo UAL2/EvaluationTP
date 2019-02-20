@@ -1,26 +1,21 @@
 window_sizes 1366 704 378 982 577 68
 cleanlooks_style
 diagrams
-  classdiagram_ref 141376 // evaluation
-    1536 889 60 A3 0 0
-  sequencediagram_ref 141632 // Créer une classe
+  usecasediagram_ref 128064 // evaluation
     982 577 100 A4 0 0
-  sequencediagram_ref 148288 // Créer un devoir
-    1228 711 100 A4 0 0
+  classdiagram_ref 141376 // evaluation
+    785 461 60 A3 0 0
+  sequencediagram_ref 141632 // Créer une classe
+    124 120 100 A4 0 0
   active  classdiagram_ref 161856 // bdd
     982 577 100 A4 0 0
-  sequencediagram_ref 148160 // Créer des critères
-    124 120 100 A4 0 0
-  sequencediagram_ref 155072 // Modifier un critère
-    124 120 100 A4 0 0
-  sequencediagram_ref 155200 // Supprimer un critère
-    124 120 100 A4 0 0
 end
 show_stereotypes
 open
-  attribute_ref 135616 // fk_idEtudiant
-  class_ref 155840 // Critere
-  class_ref 162624 // CritereDevoir
+  class_ref 155968 // Devoir
+  class_ref 169152 // EtudiantDevoir
+  usecaseview_ref 128064 // evaluation
+  class_ref 128192 // BDD
   
   package_ref 134592 // vues
 end

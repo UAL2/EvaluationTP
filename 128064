@@ -1,6 +1,6 @@
 format 221
 "evaluation" // evaluation
-  revision 16
+  revision 18
   modified_by 64 "philippe"
   // class settings
   
@@ -114,6 +114,18 @@ ${members}}
 	mysql_decl ""
 	MysqlColumn
       end
+
+      attribute 162880 "nom"
+	private explicit_type "string"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
     end
 
     class 155712 "Etudiant"
@@ -130,18 +142,6 @@ ${members}}
       
       classrelation 151104 // <association>
 	relation_ref 149184 // <association>
-      end
-
-      classrelation 151232 // <association>
-	relation 149312 ----
-	  a role_name "" multiplicity "*" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${stereotype}<${type}> ${name}${value};
-"
-	    classrelation_ref 151232 // <association>
-	  b role_name "" multiplicity "1" private
-	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
-"
-	    classrelation_ref 151360 // <association>
       end
 
       attribute 128448 "pk_idEtudiant"
@@ -191,6 +191,18 @@ ${members}}
 	mysql_decl ""
 	MysqlColumn
       end
+
+      classrelation 171456 // <association>
+	relation 169024 ----
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 171456 // <association>
+	  b role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 171584 // <association>
+      end
     end
 
     class 155968 "Devoir"
@@ -205,24 +217,8 @@ ${members}}
       explicit_switch_type ""
       mysql_decl ""
       
-      classrelation 151360 // <association>
-	relation_ref 149312 // <association>
-      end
-
       attribute 128832 "pk_idDevoir"
-	private explicit_type ""
-	cpp_decl ""
-	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
-"
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-      end
-
-      attribute 135616 "fk_idEtudiant"
-	private explicit_type ""
+	private explicit_type "int"
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
@@ -268,6 +264,10 @@ ${members}}
 "
 	    classrelation_ref 158272 // <association>
       end
+
+      classrelation 171840 // <association>
+	relation_ref 169152 // <association>
+      end
     end
 
     class 155840 "Critere"
@@ -309,20 +309,6 @@ ${members}}
       classrelation 164928 // <association>
 	relation_ref 162496 // <association>
       end
-    end
-
-    class 162496 "Date"
-      visibility package 
-      cpp_decl ""
-      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
-${members}}
-"
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      mysql_decl ""
-      
     end
 
     class 162624 "CritereDevoir"
@@ -400,6 +386,85 @@ ${members}}
 	mysql_decl ""
 	MysqlColumn
       end
+    end
+
+    class 169152 "EtudiantDevoir"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 171584 // <association>
+	relation_ref 169024 // <association>
+      end
+
+      classrelation 171712 // <association>
+	relation 169152 ----
+	  a role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 171712 // <association>
+	  b role_name "" private
+	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	    classrelation_ref 171840 // <association>
+      end
+
+      attribute 156096 "pk_idEtudiantDevoir"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 162624 "fk_idEtudiant"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 162752 "fk_idDevoir"
+	private explicit_type "int"
+	cpp_decl ""
+	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
+"
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+
+    class 162496 "Date"
+      visibility package 
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
     end
   end
 
