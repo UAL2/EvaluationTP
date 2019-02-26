@@ -2,7 +2,7 @@ format 221
 
 classcanvas 128064 class_ref 128192 // BDD
   classdiagramsettings member_max_width 0 end
-  xyz 11.2 170.5 2000
+  xyz 11.4 170.7 2000
 end
 classcanvas 128192 class_ref 134976 // EvaluationTP
   classdiagramsettings member_max_width 0 end
@@ -10,7 +10,7 @@ classcanvas 128192 class_ref 134976 // EvaluationTP
 end
 classcanvas 128320 class_ref 135104 // IhmNoter
   classdiagramsettings member_max_width 0 end
-  xyz 244.9 646.5 2000
+  xyz 244.9 646.7 2000
 end
 classcanvas 128448 class_ref 134848 // IhmAccueil
   classdiagramsettings member_max_width 0 end
@@ -18,39 +18,39 @@ classcanvas 128448 class_ref 134848 // IhmAccueil
 end
 classcanvas 128960 class_ref 135232 // IhmConsulterNotes
   classdiagramsettings member_max_width 0 end
-  xyz 414.8 647.1 2000
+  xyz 414 647.1 2000
 end
 classcanvas 129216 class_ref 135488 // IhmCréerClasse
   classdiagramsettings member_max_width 0 end
-  xyz 743 228.6 2000
+  xyz 743.4 228.6 2000
 end
 classcanvas 129344 class_ref 135360 // SystèmeFichiers
   classdiagramsettings member_max_width 0 end
-  xyz 11 47.4 2000
+  xyz 11 47 2000
 end
 classcanvas 129728 class_ref 142016 // IhmCreerDevoir
   classdiagramsettings member_max_width 0 end
-  xyz 935.9 258.4 2000
+  xyz 935.3 258.2 2000
 end
 classcanvas 130752 class_ref 148544 // IhmCreerCritere
   classdiagramsettings member_max_width 0 end
-  xyz 755.8 48 2000
+  xyz 755 48.4 2000
 end
 classcanvas 131264 class_ref 148672 // IhmModifierClasse
   classdiagramsettings member_max_width 0 end
-  xyz 890.7 44.5 2006
+  xyz 890.5 44.3 2006
 end
 classcanvas 131520 class_ref 148800 // IhmSupprimerClasse
   classdiagramsettings member_max_width 0 end
-  xyz 568.6 647.1 2000
+  xyz 568.8 647.1 2000
 end
 classcanvas 131776 class_ref 148928 // IhmModiferSupprimerCritere
   classdiagramsettings member_max_width 0 end
-  xyz 731.5 647.5 2000
+  xyz 731.7 647.1 2000
 end
 classcanvas 132160 class_ref 149056 // IhmParametrer
   classdiagramsettings member_max_width 0 end
-  xyz 743.2 435.3 2000
+  xyz 743.6 435.9 2000
 end
 packagecanvas 132544 
   package_ref 134720 // modeles
@@ -58,15 +58,15 @@ packagecanvas 132544
 end
 packagecanvas 132672 
   package_ref 134848 // controleur
-   color blue  xyzwh 406.4 7 1985 262 587
+   color blue  xyzwh 405.6 7 1985 262 587
 end
 packagecanvas 132800 
   package_ref 134592 // vues
-   color lightmagenta  xyzwh 733.8 3.2 1995 348 542
+   color lightmagenta  xyzwh 732.6 2.8 1995 348 542
 end
 packagecanvas 132928 
   package_ref 134592 // vues
-   color lightmagenta  xyzwh 32 600.2 1990 918 288
+   color lightmagenta  xyzwh 32 599.8 1990 918 288
 end
 relationcanvas 128576 relation_ref 128064 // <aggregation>
   decenter_end 131
