@@ -18,13 +18,27 @@ Documentation</title>
 
 <a name="ref22_129"></a>
 <p>Properties:</p><ul>
-<li>html dir:<br /><div class="sub">/home/philippe/Documents/EvaluationTP/documentation/</div></li>
+<li>html dir:<br /><div class="sub">/home/philippe/eclipse-workspace/EvaluationTP/EvaluationTP/documentation/</div></li>
 </ul>
 <a name="ref22_128064"></a>
 <h1 class ="package">1 Package evaluation</h1>
 <div class="sub">
+<a name="ref18_134592"></a>
+<h2 class ="view">1.1 Class View bdd</h2>
+<div class="sub">
+<a name="ref10_161856"></a>
+<p align="center"><img src="fig161856.png" alt="" /></p>
+ <p align="center"><b>bdd</b></p><p><br /></p><p><br /></p>
+<table><tr><td><div class="element">Class <b><a href="class155584.html#ref4_155584"><b>Classe</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class155712.html#ref4_155712"><b>Etudiant</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class155968.html#ref4_155968"><b>Devoir</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class155840.html#ref4_155840"><b>Critere</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class162624.html#ref4_162624"><b>CritereDevoir</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class169152.html#ref4_169152"><b>EtudiantDevoir</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class162496.html#ref4_162496"><b>Date</b></a></b></div></td></tr></table>
+</div>
 <a name="ref19_128064"></a>
-<h2 class ="view">1.1 Use Case View evaluation</h2>
+<h2 class ="view">1.2 Use Case View evaluation</h2>
 <div class="sub">
 <a name="ref11_128064"></a>
 <p align="center"><img src="fig128064.png" alt="" /></p>
@@ -32,7 +46,7 @@ Documentation</title>
 <table><tr><td><div class="element">Class <b><a href="class128064.html#ref4_128064"><b>Enseignant</b></a></b></div></td></tr></table>
 <table><tr><td><div class="element">Class <b><a href="class128320.html#ref4_128320"><b>Installateur</b></a></b></div></td></tr></table>
 <a name="ref5_128064"></a>
-<h3 class ="usecase">1.1.1 Use Case Noter un étudiant</h3>
+<h3 class ="usecase">1.2.1 Use Case Noter un étudiant</h3>
 <p>Properties:</p><ul>
 <li>Description:<br /><div class="sub">Le cas d'utilisation commence quand <br />1. l'enseignant sélectionne une classe<br />2. sélectionne un étudiant<br />3. déplace les curseurs de compétences<br />4. valide les compétences<br />5. enregistre les compétences de la classe</div></li>
 <li>Exceptions:<br /><div class="sub">Ressources innaccessibles: Proposition de sauvegarde sur un cloud.</div></li>
@@ -47,7 +61,7 @@ Documentation</title>
  <p align="center"><b>Noter un étudiant</b></p><p><br /></p><p><br /></p>
 </div>
 <a name="ref5_128192"></a>
-<h3 class ="usecase">1.1.2 Use Case Consulter les notes</h3>
+<h3 class ="usecase">1.2.2 Use Case Consulter les notes</h3>
 <p>Properties:</p><ul>
 <li>Description:<br /><div class="sub">Le cas d'utilisation commence quand :<br />1. l'enseignant sélectionne un devoir<br />2a. il exporte les notes dans un fichier texte utilisable par un tableur</div></li>
 <li>Exceptions:<br /><div class="sub">Pb d'accès à la base de données : Affichage d'un msg<br />Pb d'écriture lors de l'export : Affichage d'un msg</div></li>
@@ -62,7 +76,7 @@ Documentation</title>
  <p align="center"><b>Consulter les notes</b></p><p><br /></p><p><br /></p>
 </div>
 <a name="ref5_128320"></a>
-<h3 class ="usecase">1.1.3 Use Case Créer une classe</h3>
+<h3 class ="usecase">1.2.3 Use Case Créer une classe</h3>
 <p>Properties:</p><ul>
 <li>Description:<br /><div class="sub">Le cas d'utilisation commence quand :<br />1. l'enseignant clique sur l'icône ajouter une classe<br />2. il saisie le nom de la classe<br />3. il clique sur l'icone ajouter un étudiant<br />4. il renseigne les champs nom et prénom<br />5. il recommence les étapes jusqu'à la fin de la liste<br />6. il enregistre dans la BDD</div></li>
 <li>Exceptions:<br /><div class="sub">Pas d'accès à la BDD : Affichage d'un message d'erreur.<br />La classe existe: 2b. Affichage de la classe.</div></li>
@@ -77,7 +91,7 @@ Documentation</title>
  <p align="center"><b>Créer une classe</b></p><p><br /></p><p><br /></p>
 </div>
 <a name="ref5_128448"></a>
-<h3 class ="usecase">1.1.4 Use Case Modifier une classe</h3>
+<h3 class ="usecase">1.2.4 Use Case Modifier une classe</h3>
 <p>Properties:</p><ul>
 <li>Description:<br /><div class="sub">le cas d'utilisation commence quand <br />1 l'utilisateur sélectionne une classe<br />1a l'utilisateur change le nom de la classe<br />2 l' utilisateur sélectionne le champs d'un étudiant<br />2a l'utilisateur change les données  de l'étudiant<br />2b l'utilisateur recommence l'étape  2 et 2a pour les étudiant concernés<br />3 l'utilisateur enregistre les nouvelle donnes </div></li>
 <li>Exceptions:<br /><div class="sub">pas accès a la classe : affichage d'erreur</div></li>
@@ -92,7 +106,7 @@ Documentation</title>
  <p align="center"><b>Modifier une classe</b></p><p><br /></p><p><br /></p>
 </div>
 <a name="ref5_128576"></a>
-<h3 class ="usecase">1.1.5 Use Case Supprimer une classe</h3>
+<h3 class ="usecase">1.2.5 Use Case Supprimer une classe</h3>
 <p>Properties:</p><ul>
 <li>Description:<br /><div class="sub">Le cas d'utilisation commence quand:<br />1. l'enseignant sélectionne une classe<br />2/ après sélection d'une ou plusieurs classe<br />3/ il clique sur le bouton supprimer classe<br />4/ la ou les classes serrons supprimer de la BDD</div></li>
 <li>Exceptions:<br /><div class="sub">il n'y a aucune classe</div></li>
@@ -107,7 +121,7 @@ Documentation</title>
  <p align="center"><b>Supprimer une classe</b></p><p><br /></p><p><br /></p>
 </div>
 <a name="ref5_128704"></a>
-<h3 class ="usecase">1.1.6 Use Case Créer des critères</h3>
+<h3 class ="usecase">1.2.6 Use Case Créer des critères</h3>
 <p>Properties:</p><ul>
 <li>Description:<br /><div class="sub">- le cas d'utilisation commence quand :<br />1. l'enseignant clique sur l'icone ajouter un critère.<br />2. il saisie le nom du critère.<br />3. il clique sur enregistré ce qui enregistre dans la BDD.<br /></div></li>
 <li>Exceptions:<br /><div class="sub">1. le critère existe déjà : affichage du critère existant.<br />2. problème d'accès a la BDD : affichage d'un msg d'erreur.</div></li>
@@ -122,7 +136,7 @@ Documentation</title>
  <p align="center"><b>Créer des critères</b></p><p><br /></p><p><br /></p>
 </div>
 <a name="ref5_128832"></a>
-<h3 class ="usecase">1.1.7 Use Case Modifier des critères</h3>
+<h3 class ="usecase">1.2.7 Use Case Modifier des critères</h3>
 <p>Properties:</p><ul>
 <li>Description:<br /><div class="sub">Le cas d'utilisation commence quand :<br />1.on sélection la case des critères .<br />2 .on clique sur la case critère pour modifié.<br />3.on ajoute la modification .<br />4.cette modification sera sauvegarder dans le BDD.</div></li>
 <li>Exceptions:<br /><div class="sub">1. il y a un ou plusieurs critère prise en conte .<br />2.Proposition de sauvegarde sur un cloud.</div></li>
@@ -137,7 +151,7 @@ Documentation</title>
  <p align="center"><b>Modifier un critère</b></p><p><br /></p><p><br /></p>
 </div>
 <a name="ref5_128960"></a>
-<h3 class ="usecase">1.1.8 Use Case Supprimer des critères</h3>
+<h3 class ="usecase">1.2.8 Use Case Supprimer des critères</h3>
 <p>Properties:</p><ul>
 <li>Description:<br /><div class="sub">Le cas d'utilisation commence quand :<br />1/ l'enseignant clique sur l'icone supprimer un critère.<br />2/ il sélectionne le ou les critère(s).<br />3/ il clique sur enregistré ce qui enregistre la modification ( suppression)dans la BDD.</div></li>
 <li>Exceptions:<br /><div class="sub">1/ problème d'accès a la BDD : affichage d'un msg d'erreur.<br /></div></li>
@@ -152,7 +166,7 @@ Documentation</title>
  <p align="center"><b>Supprimer un critère</b></p><p><br /></p><p><br /></p>
 </div>
 <a name="ref5_129088"></a>
-<h3 class ="usecase">1.1.9 Use Case Créer d'un devoir</h3>
+<h3 class ="usecase">1.2.9 Use Case Créer d'un devoir</h3>
 <p>Properties:</p><ul>
 <li>Description:<br /><div class="sub">Le cas d'utilisation commence quand<br /><br />1. L'enseignant clique sur "Créer Devoir"<br />2. sélectionne le type de devoir<br />3. rentre le titre du devoir<br />4. ajoute une ou des classes<br />4. remplit le devoir et indique le barème<br />5. enregistre le devoir</div></li>
 <li>Exceptions:<br /><div class="sub">- titre déjà existant : message d'erreur<br />- classe</div></li>
@@ -167,7 +181,7 @@ Documentation</title>
  <p align="center"><b>Créer un devoir</b></p><p><br /></p><p><br /></p>
 </div>
 <a name="ref5_129216"></a>
-<h3 class ="usecase">1.1.10 Use Case Parametrer le logiciel</h3>
+<h3 class ="usecase">1.2.10 Use Case Parametrer le logiciel</h3>
 <p>Properties:</p><ul>
 <li>Description:<br /><div class="sub">Le cas d'utilisation commence quand :<br />1. clique sur le bouton de paramétrage.<br />2. on tombe sur les paramètres: <br />-Utilisateur<br />-BDD<br />3. Il rentre son identifiant mot de passe .<br />4. Les rubriques au choix<br />-création de classe<br />-modification classe<br />-consulté les note<br />-création devoir<br />-modification critère<br />-noté l'étudiant<br />5. puis on valide les rubrique au choix sur la touche en bas a droite.<br />6. pour terminer on clique sur la touche retour en bas a gauche.</div></li>
 <li>Exceptions:<br /><div class="sub">Problème accès : affichage de message d'erreur</div></li>
@@ -182,7 +196,7 @@ Documentation</title>
  <p align="center"><b>Paramètrer le logiciel</b></p><p><br /></p><p><br /></p>
 </div>
 <a name="ref39_134592"></a>
-<h3 class ="activity">1.1.11 Activity ihm</h3>
+<h3 class ="activity">1.2.11 Activity ihm</h3>
 <div class="sub">
 <a name="ref17_134720"></a>
 <p align="center"><img src="fig134720.png" alt="" /></p>
@@ -270,25 +284,31 @@ Documentation</title>
 </div>
 </div>
 <a name="ref18_128064"></a>
-<h2 class ="view">1.2 Class View evaluation</h2>
+<h2 class ="view">1.3 Class View evaluation</h2>
 <div class="sub">
 <a name="ref10_141376"></a>
 <p align="center"><img src="fig141376.png" alt="" /></p>
  <p align="center"><b>evaluation</b></p><p><br /></p><p><br /></p>
 <table><tr><td><div class="element">Class <b><a href="class134976.html#ref4_134976"><b>EvaluationTP</b></a></b></div></td></tr></table>
-<table><tr><td><div class="element">Class <b><a href="class135104.html#ref4_135104"><b>ihmNoter</b></a></b></div></td></tr></table>
-<table><tr><td><div class="element">Class <b><a href="class134848.html#ref4_134848"><b>ihmAccueil</b></a></b></div></td></tr></table>
-<table><tr><td><div class="element">Class <b><a href="class135232.html#ref4_135232"><b>ihmConsulterNotes</b></a></b></div></td></tr></table>
-<table><tr><td><div class="element">Class <b><a href="class135488.html#ref4_135488"><b>ihmCréerClasse</b></a></b></div></td></tr></table>
-<table><tr><td><div class="element">Class <b><a href="class142016.html#ref4_142016"><b>ihmCreerDevoir</b></a></b></div></td></tr></table>
-<table><tr><td><div class="element">Class <b><a href="class148544.html#ref4_148544"><b>ihmCreerCritere</b></a></b></div></td></tr></table>
-<table><tr><td><div class="element">Class <b><a href="class148672.html#ref4_148672"><b>ihmModifierClasse</b></a></b></div></td></tr></table>
-<table><tr><td><div class="element">Class <b><a href="class148800.html#ref4_148800"><b>ihmSupprimerClasse</b></a></b></div></td></tr></table>
-<table><tr><td><div class="element">Class <b><a href="class148928.html#ref4_148928"><b>ihmModiferSupprimerCritere</b></a></b></div></td></tr></table>
-<table><tr><td><div class="element">Class <b><a href="class149056.html#ref4_149056"><b>ihmParametrer</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class135104.html#ref4_135104"><b>IhmNoter</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class134848.html#ref4_134848"><b>IhmAccueil</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class135232.html#ref4_135232"><b>IhmConsulterNotes</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class135488.html#ref4_135488"><b>IhmCréerClasse</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class142016.html#ref4_142016"><b>IhmCreerDevoir</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class148544.html#ref4_148544"><b>IhmCreerCritere</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class148672.html#ref4_148672"><b>IhmModifierClasse</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class148800.html#ref4_148800"><b>IhmSupprimerClasse</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class148928.html#ref4_148928"><b>IhmModiferSupprimerCritere</b></a></b></div></td></tr></table>
+<table><tr><td><div class="element">Class <b><a href="class149056.html#ref4_149056"><b>IhmParametrer</b></a></b></div></td></tr></table>
 <table><tr><td><div class="element">Class <b><a href="class135360.html#ref4_135360"><b>SystèmeFichiers</b></a></b></div></td></tr></table>
 <table><tr><td><div class="element">Class <b><a href="class128192.html#ref4_128192"><b>BDD</b></a></b></div></td></tr></table>
 </div>
+<a name="ref22_134592"></a>
+<h2 class ="package">1.4 Package vues</h2>
+<a name="ref22_134720"></a>
+<h2 class ="package">1.5 Package modeles</h2>
+<a name="ref22_134848"></a>
+<h2 class ="package">1.6 Package controleur</h2>
 </div>
 </body>
 </html>

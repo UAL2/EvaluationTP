@@ -7,15 +7,16 @@ diagrams
     785 461 60 A3 0 0
   sequencediagram_ref 141632 // Créer une classe
     124 120 100 A4 0 0
-  active  classdiagram_ref 161856 // bdd
+  classdiagram_ref 161856 // bdd
+    982 577 100 A4 0 0
+  active  sequencediagram_ref 148160 // Créer des critères
     982 577 100 A4 0 0
 end
 show_stereotypes
+selected sequencediagram_ref 148160 // Créer des critères
 open
-  class_ref 155968 // Devoir
-  class_ref 169152 // EtudiantDevoir
-  usecaseview_ref 128064 // evaluation
-  class_ref 128192 // BDD
+  usecase_ref 128320 // Créer une classe
+  usecase_ref 128704 // Créer des critères
   
   package_ref 134592 // vues
 end

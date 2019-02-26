@@ -1554,7 +1554,7 @@ ${members}}
       end
     end
 
-    class 135104 "ihmNoter"
+    class 135104 "IhmNoter"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -1667,7 +1667,7 @@ ${members}}
       end
     end
 
-    class 134848 "ihmAccueil"
+    class 134848 "IhmAccueil"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -1792,7 +1792,7 @@ ${members}}
       end
     end
 
-    class 135232 "ihmConsulterNotes"
+    class 135232 "IhmConsulterNotes"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -1857,7 +1857,7 @@ ${members}}
       end
     end
 
-    class 135488 "ihmCréerClasse"
+    class 135488 "IhmCréerClasse"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -1946,7 +1946,7 @@ ${members}}
       end
     end
 
-    class 142016 "ihmCreerDevoir"
+    class 142016 "IhmCreerDevoir"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -2083,7 +2083,7 @@ ${members}}
       end
     end
 
-    class 148544 "ihmCreerCritere"
+    class 148544 "IhmCreerCritere"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -2136,7 +2136,7 @@ ${members}}
       end
     end
 
-    class 148672 "ihmModifierClasse"
+    class 148672 "IhmModifierClasse"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -2237,7 +2237,7 @@ ${members}}
       end
     end
 
-    class 148800 "ihmSupprimerClasse"
+    class 148800 "IhmSupprimerClasse"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -2302,7 +2302,7 @@ ${members}}
       end
     end
 
-    class 148928 "ihmModiferSupprimerCritere"
+    class 148928 "IhmModiferSupprimerCritere"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -2403,7 +2403,7 @@ ${members}}
       end
     end
 
-    class 149056 "ihmParametrer"
+    class 149056 "IhmParametrer"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {

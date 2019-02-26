@@ -2,9 +2,9 @@ format 221
 
 classinstance 128064 class_ref 128064 // Enseignant
   name ""   xyz 1 4 2000 life_line_z 2000
-classinstance 128192 class_ref 134848 // ihmAccueil
+classinstance 128192 class_ref 134848 // IhmAccueil
   name ""   xyz 131 4 2000 life_line_z 2000
-classinstance 128320 class_ref 135488 // ihmCréerClasse
+classinstance 128320 class_ref 135488 // IhmCréerClasse
   name ""   xyz 225 4 2005 life_line_z 2000
 classinstance 128832 class_ref 134976 // EvaluationTP
   name ""   xyz 357 4 2000 life_line_z 2000
@@ -18,28 +18,28 @@ classinstance 132416 class_ref 128192 // BDD
 durationcanvas 128448 classinstance_ref 128064 // :Enseignant
   xyzwh 36 65 2010 11 25
 end
-durationcanvas 128576 classinstance_ref 128192 // :ihmAccueil
+durationcanvas 128576 classinstance_ref 128192 // :IhmAccueil
   xyzwh 169 64 2010 11 25
 end
 durationcanvas 128960 classinstance_ref 128832 // :EvaluationTP
-  xyzwh 402 76 2010 11 74
+  xyzwh 403 76 2010 11 74
 end
-durationcanvas 129216 classinstance_ref 128320 // :ihmCréerClasse
+durationcanvas 129216 classinstance_ref 128320 // :IhmCréerClasse
   xyzwh 280 104 2010 11 26
 end
-durationcanvas 129472 classinstance_ref 128192 // :ihmAccueil
+durationcanvas 129472 classinstance_ref 128192 // :IhmAccueil
   xyzwh 169 131 2010 11 26
 end
 durationcanvas 132800 classinstance_ref 128064 // :Enseignant
   xyzwh 36 174 2010 11 25
 end
-durationcanvas 132928 classinstance_ref 128320 // :ihmCréerClasse
+durationcanvas 132928 classinstance_ref 128320 // :IhmCréerClasse
   xyzwh 280 174 2010 11 25
 end
 durationcanvas 133184 classinstance_ref 128064 // :Enseignant
   xyzwh 36 204 2010 11 25
 end
-durationcanvas 133312 classinstance_ref 128320 // :ihmCréerClasse
+durationcanvas 133312 classinstance_ref 128320 // :IhmCréerClasse
   xyzwh 280 204 2010 11 42
   overlappingdurationcanvas 133568
     xyzwh 286 215 2020 11 25
@@ -48,17 +48,17 @@ end
 durationcanvas 133824 classinstance_ref 128064 // :Enseignant
   xyzwh 36 306 2010 11 25
 end
-durationcanvas 133952 classinstance_ref 128320 // :ihmCréerClasse
+durationcanvas 133952 classinstance_ref 128320 // :IhmCréerClasse
   xyzwh 280 306 2010 11 25
 end
 durationcanvas 134208 classinstance_ref 128064 // :Enseignant
   xyzwh 36 372 2010 11 25
 end
-durationcanvas 134336 classinstance_ref 128320 // :ihmCréerClasse
+durationcanvas 134336 classinstance_ref 128320 // :IhmCréerClasse
   xyzwh 280 372 2010 11 26
 end
 durationcanvas 134592 classinstance_ref 128832 // :EvaluationTP
-  xyzwh 402 387 2010 11 25
+  xyzwh 403 387 2010 11 25
 end
 durationcanvas 134848 classinstance_ref 132416 // :BDD
   xyzwh 559 399 2010 11 25
