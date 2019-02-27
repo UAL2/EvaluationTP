@@ -1,6 +1,6 @@
 format 221
 "evaluation" // evaluation
-  revision 18
+  revision 19
   modified_by 64 "philippe"
   // class settings
   
@@ -241,7 +241,7 @@ ${members}}
 	MysqlColumn
       end
 
-      attribute 136000 "date"
+      attribute 136000 "dateDevoir"
 	private type class_ref 162496 // Date
 	cpp_decl ""
 	java_decl "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
@@ -1292,7 +1292,7 @@ ${members}}
 	    java "  ${comment}${@}${visibility}${static}${final}${transient}${volatile}${type} ${name}${value};
 "
 	    classrelation_ref 128704 // <directional aggregation>
-	  b parent class_ref 135360 // SystèmeFichiers
+	  b parent class_ref 135360 // SystemeFichiers
       end
 
       classrelation 135232 // <aggregation>
@@ -1790,6 +1790,18 @@ ${members}}
 	
 	
       end
+
+      operation 167104 "montrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
     end
 
     class 135232 "IhmConsulterNotes"
@@ -1857,7 +1869,7 @@ ${members}}
       end
     end
 
-    class 135488 "IhmCréerClasse"
+    class 135488 "IhmCreerClasse"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -1934,6 +1946,30 @@ ${members}}
       end
 
       operation 160448 "btnValiderClasse"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 166976 "btEnregistrer"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 167232 "cacher"
 	public explicit_return_type ""
 	nparams 0
 	
@@ -2454,9 +2490,21 @@ ${members}}
       classrelation 143680 // <aggregation>
 	relation_ref 142272 // <aggregation>
       end
+
+      operation 167360 "cacher"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
     end
 
-    class 135360 "SystèmeFichiers"
+    class 135360 "SystemeFichiers"
       visibility package 
       cpp_decl ""
       java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
@@ -2635,6 +2683,18 @@ ${members}};
       end
 
       operation 152512 "sauverCriteres"
+	public explicit_return_type ""
+	nparams 0
+	
+	java_def "  ${comment}${@}${visibility}${final}${static}${abstract}${synchronized}${type} ${name}${(}${)}${throws}${staticnl}{
+  ${body}}
+"
+	
+	
+	
+      end
+
+      operation 167488 "creer"
 	public explicit_return_type ""
 	nparams 0
 	
