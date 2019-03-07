@@ -2,46 +2,58 @@ format 221
 
 classinstance 128064 class_ref 128064 // Enseignant
   name ""   xyz 7 5 2000 life_line_z 2000
-classinstance 128192 class_ref 142016 // ihmCreerDevoir
+classinstance 128192 class_ref 142016 // IhmCreerDevoir
   name ""   xyz 101 4 2000 life_line_z 2000
 classinstance 128704 class_ref 134976 // EvaluationTP
   name ""   xyz 361 4 2000 life_line_z 2000
-classinstance 129088 class_ref 148544 // ihmCreerCritere
+classinstance 129088 class_ref 148544 // IhmCreerCritere
   name ""   xyz 230 4 2005 life_line_z 2000
 classinstance 130752 class_ref 128192 // BDD
   name ""   xyz 539 4 2000 life_line_z 2000
 durationcanvas 128320 classinstance_ref 128064 // :Enseignant
   xyzwh 42 75 2010 11 25
 end
-durationcanvas 128448 classinstance_ref 128192 // :ihmCreerDevoir
+durationcanvas 128448 classinstance_ref 128192 // :IhmCreerDevoir
   xyzwh 155 75 2010 11 26
 end
 durationcanvas 128832 classinstance_ref 128704 // :EvaluationTP
   xyzwh 406 90 2010 11 73
 end
-durationcanvas 129216 classinstance_ref 129088 // :ihmCreerCritere
-  xyzwh 284 116 2010 11 25
+durationcanvas 129216 classinstance_ref 129088 // :IhmCreerCritere
+  xyzwh 285 116 2010 11 25
 end
-durationcanvas 129472 classinstance_ref 128192 // :ihmCreerDevoir
+durationcanvas 129472 classinstance_ref 128192 // :IhmCreerDevoir
   xyzwh 155 142 2010 11 25
 end
 durationcanvas 129728 classinstance_ref 128064 // :Enseignant
   xyzwh 42 176 2010 11 25
 end
-durationcanvas 129856 classinstance_ref 129088 // :ihmCreerCritere
-  xyzwh 284 176 2010 11 26
+durationcanvas 129856 classinstance_ref 129088 // :IhmCreerCritere
+  xyzwh 285 176 2010 11 26
 end
 durationcanvas 130112 classinstance_ref 128064 // :Enseignant
   xyzwh 42 221 2010 11 26
 end
-durationcanvas 130240 classinstance_ref 129088 // :ihmCreerCritere
-  xyzwh 284 221 2010 11 36
+durationcanvas 130240 classinstance_ref 129088 // :IhmCreerCritere
+  xyzwh 285 221 2010 11 36
 end
 durationcanvas 130496 classinstance_ref 128704 // :EvaluationTP
-  xyzwh 406 239 2010 11 28
+  xyzwh 406 238 2010 11 159
 end
 durationcanvas 130880 classinstance_ref 130752 // :BDD
-  xyzwh 558 256 2010 11 25
+  xyzwh 558 255 2010 11 26
+end
+durationcanvas 131136 classinstance_ref 128192 // :IhmCreerDevoir
+  xyzwh 155 344 2010 11 27
+end
+durationcanvas 131392 classinstance_ref 129088 // :IhmCreerCritere
+  xyzwh 285 374 2010 11 27
+end
+durationcanvas 131648 classinstance_ref 130752 // :BDD
+  xyzwh 558 294 2010 11 27
+end
+durationcanvas 131904 classinstance_ref 128192 // :IhmCreerDevoir
+  xyzwh 155 311 2010 11 27
 end
 msg 128576 asynchronous
   from durationcanvas_ref 128320
@@ -82,13 +94,37 @@ msg 130368 asynchronous
 msg 130624 synchronous
   from durationcanvas_ref 130240
   to durationcanvas_ref 130496
-  yz 239 2015 msg operation_ref 148800 // "sauverCritere()"
+  yz 238 2015 msg operation_ref 148800 // "sauverCritere()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 301 217
+  label_xy 301 216
 msg 131008 synchronous
   from durationcanvas_ref 130496
   to durationcanvas_ref 130880
-  yz 256 2015 msg operation_ref 148928 // "enregistrerCritere()"
+  yz 255 2015 msg operation_ref 148928 // "enregistrerCritere()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 425 236
+  label_xy 425 235
+msg 131264 synchronous
+  from durationcanvas_ref 130496
+  to durationcanvas_ref 131136
+  yz 344 2015 msg operation_ref 139840 // "montrer()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 184 321
+msg 131520 synchronous
+  from durationcanvas_ref 130496
+  to durationcanvas_ref 131392
+  yz 374 2015 msg operation_ref 174016 // "cacher()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 325 352
+msg 131776 synchronous
+  from durationcanvas_ref 130496
+  to durationcanvas_ref 131648
+  yz 294 2015 msg operation_ref 129600 // "listeCriteres()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 443 272
+msg 132032 synchronous
+  from durationcanvas_ref 130496
+  to durationcanvas_ref 131904
+  yz 311 3005 msg operation_ref 140480 // "fournirCriteres()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 178 289
 end

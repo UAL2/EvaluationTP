@@ -1,15 +1,13 @@
-window_sizes 1280 987 378 896 860 68
+window_sizes 1920 1016 378 1536 889 68
 cleanlooks_style
-diagrams
-  sequencediagram_ref 141632 // Créer une classe
-    124 120 100 A4 0 0
-  active  classdiagram_ref 161856 // bdd
-    896 860 100 A4 0 0
-end
 show_stereotypes
 selected 
-  package_ref 134592 // vues
+  package_ref 129 // EvaluationTP
 open
+  classview_ref 134592 // bdd
+  usecase_ref 128704 // Créer des critères
+  usecase_ref 129088 // Créer d'un devoir
+  class_ref 142016 // IhmCreerDevoir
   
   package_ref 134592 // vues
 end

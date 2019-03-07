@@ -1,6 +1,6 @@
 format 221
 "EvaluationTP"
-  revision 9
+  revision 11
   modified_by 64 "philippe"
 
 
@@ -45,6 +45,6 @@ format 221
   mark_for_import
   
   ncouples 1
-  key "html dir" value "/home/philippe/eclipse-workspace/EvaluationTP/EvaluationTP/documentation/"
+  key "html dir" value "/home/philippe/Documents/EvaluationTP/documentation/"
   package_ref 128064 // evaluation
 end
