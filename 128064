@@ -1,6 +1,6 @@
 format 221
 "evaluation" // evaluation
-  revision 24
+  revision 25
   modified_by 64 "philippe"
   // class settings
   
@@ -1541,7 +1541,7 @@ ${members}}
 	    classrelation_ref 143680 // <aggregation>
       end
 
-      operation 180672 "Devoir"
+      operation 180672 "devoir"
 	public explicit_return_type ""
 	nparams 0
 	
