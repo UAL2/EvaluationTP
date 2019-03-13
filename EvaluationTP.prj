@@ -1,6 +1,6 @@
 format 221
 "EvaluationTP"
-  revision 11
+  revision 12
   modified_by 64 "philippe"
 
 
@@ -45,6 +45,6 @@ format 221
   mark_for_import
   
   ncouples 1
-  key "html dir" value "/home/philippe/Documents/EvaluationTP/documentation/"
+  key "html dir" value "/media/philippe/31C0-1295/projet java/EvaluationTP/documentation/"
   package_ref 128064 // evaluation
 end

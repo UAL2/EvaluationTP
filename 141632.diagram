@@ -12,7 +12,7 @@ fragment 131520 "loop"
   form "Pour chaque étudiant" xyzwh 12 269 1995 290 135
 end
 textcanvas 131648 "Pour chaque étudiant"
-  xyzwh 15 329 2000 140 22
+  xyzwh 15 390 2000 140 22
 classinstance 132416 class_ref 128192 // BDD
   name ""   xyz 540 4 2000 life_line_z 2000
 durationcanvas 128448 classinstance_ref 128064 // :Enseignant
@@ -22,7 +22,7 @@ durationcanvas 128576 classinstance_ref 128192 // :IhmAccueil
   xyzwh 169 64 2010 11 25
 end
 durationcanvas 128960 classinstance_ref 128832 // :EvaluationTP
-  xyzwh 402 76 2010 11 74
+  xyzwh 403 76 2010 11 74
 end
 durationcanvas 129216 classinstance_ref 128320 // :IhmCreerClasse
   xyzwh 280 104 2010 11 26
@@ -58,7 +58,7 @@ durationcanvas 134336 classinstance_ref 128320 // :IhmCreerClasse
   xyzwh 280 430 2010 11 27
 end
 durationcanvas 134592 classinstance_ref 128832 // :EvaluationTP
-  xyzwh 402 446 2010 11 69
+  xyzwh 403 446 2010 11 69
 end
 durationcanvas 134848 classinstance_ref 132416 // :BDD
   xyzwh 559 457 2010 11 25

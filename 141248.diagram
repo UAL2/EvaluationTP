@@ -2,84 +2,102 @@ format 221
 
 classinstance 128064 class_ref 128064 // Enseignant
   name ""   xyz 1 4 2000 life_line_z 2000
-classinstance 128192 class_ref 134848 // ihmAccueil
+classinstance 128192 class_ref 134848 // IhmAccueil
   name ""   xyz 137 4 2005 life_line_z 2000
 classinstance 128704 class_ref 134976 // EvaluationTP
   name ""   xyz 404 4 2005 life_line_z 2000
 classinstance 129088 class_ref 128192 // BDD
   name ""   xyz 563 5 2000 life_line_z 2000
-classinstance 129472 class_ref 135104 // ihmNoter
+classinstance 129472 class_ref 135104 // IhmNoter
   name ""   xyz 247 4 2010 life_line_z 2000
 fragment 133056 "loop"
-  form "pour chaque critère" xyzwh 16 346 2020 294 87
+  form "pour chaque critère" xyzwh 16 367 1995 294 87
 end
 textcanvas 133184 "Pour chaque critère"
-  xyzwh 20 412 2025 128 22
+  xyzwh 20 433 2025 128 22
 durationcanvas 128320 classinstance_ref 128064 // :Enseignant
   xyzwh 36 61 2010 11 25
 end
-durationcanvas 128448 classinstance_ref 128192 // :ihmAccueil
+durationcanvas 128448 classinstance_ref 128192 // :IhmAccueil
   xyzwh 175 61 2010 11 36
 end
 durationcanvas 128832 classinstance_ref 128704 // :EvaluationTP
-  xyzwh 449 71 2010 11 105
+  xyzwh 450 71 2010 11 105
 end
 durationcanvas 129216 classinstance_ref 129088 // :BDD
   xyzwh 582 130 2010 11 27
 end
-durationcanvas 129856 classinstance_ref 129472 // :ihmNoter
+durationcanvas 129856 classinstance_ref 129472 // :IhmNoter
   xyzwh 279 96 2010 11 25
 end
-durationcanvas 130112 classinstance_ref 128192 // :ihmAccueil
+durationcanvas 130112 classinstance_ref 128192 // :IhmAccueil
   xyzwh 175 127 2010 11 28
 end
-durationcanvas 130368 classinstance_ref 129472 // :ihmNoter
+durationcanvas 130368 classinstance_ref 129472 // :IhmNoter
   xyzwh 279 160 2010 11 25
 end
 durationcanvas 130624 classinstance_ref 128064 // :Enseignant
   xyzwh 36 188 2010 11 25
 end
-durationcanvas 130752 classinstance_ref 129472 // :ihmNoter
+durationcanvas 130752 classinstance_ref 129472 // :IhmNoter
   xyzwh 279 188 2010 11 26
 end
 durationcanvas 131008 classinstance_ref 128704 // :EvaluationTP
-  xyzwh 449 199 2010 11 95
+  xyzwh 450 196 2010 11 73
 end
 durationcanvas 131264 classinstance_ref 129088 // :BDD
-  xyzwh 582 244 2010 11 25
+  xyzwh 582 242 2010 11 27
 end
-durationcanvas 131520 classinstance_ref 129472 // :ihmNoter
-  xyzwh 279 231 2010 11 25
+durationcanvas 131520 classinstance_ref 129472 // :IhmNoter
+  xyzwh 279 229 2010 11 27
 end
 durationcanvas 131776 classinstance_ref 128064 // :Enseignant
-  xyzwh 36 310 2010 11 25
+  xyzwh 36 262 2010 11 25
 end
-durationcanvas 131904 classinstance_ref 129472 // :ihmNoter
-  xyzwh 279 310 2010 11 25
+durationcanvas 131904 classinstance_ref 129472 // :IhmNoter
+  xyzwh 279 262 2010 11 28
 end
 durationcanvas 132160 classinstance_ref 128064 // :Enseignant
-  xyzwh 36 384 2010 11 25
+  xyzwh 36 405 2010 11 25
 end
-durationcanvas 132288 classinstance_ref 129472 // :ihmNoter
-  xyzwh 279 384 2010 11 28
-end
-durationcanvas 132544 classinstance_ref 129472 // :ihmNoter
-  xyzwh 279 271 2010 11 25
-end
-durationcanvas 132800 classinstance_ref 129088 // :BDD
-  xyzwh 582 210 2010 11 25
+durationcanvas 132288 classinstance_ref 129472 // :IhmNoter
+  xyzwh 279 405 2010 11 28
 end
 durationcanvas 133312 classinstance_ref 128064 // :Enseignant
-  xyzwh 36 457 2010 11 25
+  xyzwh 36 478 2010 11 25
 end
-durationcanvas 133440 classinstance_ref 129472 // :ihmNoter
-  xyzwh 279 457 2010 11 29
+durationcanvas 133440 classinstance_ref 129472 // :IhmNoter
+  xyzwh 279 478 2010 11 29
 end
 durationcanvas 133696 classinstance_ref 128704 // :EvaluationTP
-  xyzwh 449 466 2010 11 25
+  xyzwh 450 491 2010 11 74
 end
 durationcanvas 133952 classinstance_ref 129088 // :BDD
-  xyzwh 582 478 2010 11 25
+  xyzwh 582 499 2010 11 25
+end
+durationcanvas 134208 classinstance_ref 128704 // :EvaluationTP
+  xyzwh 450 279 2010 11 26
+end
+durationcanvas 134464 classinstance_ref 129088 // :BDD
+  xyzwh 582 294 2010 11 25
+end
+durationcanvas 134720 classinstance_ref 128064 // :Enseignant
+  xyzwh 36 314 2010 11 40
+end
+durationcanvas 134848 classinstance_ref 129472 // :IhmNoter
+  xyzwh 279 316 2010 11 37
+end
+durationcanvas 135104 classinstance_ref 128704 // :EvaluationTP
+  xyzwh 450 334 2010 11 28
+end
+durationcanvas 135360 classinstance_ref 129088 // :BDD
+  xyzwh 582 351 2010 11 25
+end
+durationcanvas 135872 classinstance_ref 128192 // :IhmAccueil
+  xyzwh 175 528 2010 11 25
+end
+durationcanvas 136128 classinstance_ref 129472 // :IhmNoter
+  xyzwh 279 560 2010 11 25
 end
 msg 128576 asynchronous
   from durationcanvas_ref 128320
@@ -126,61 +144,91 @@ msg 130880 asynchronous
 msg 131136 synchronous
   from durationcanvas_ref 130752
   to durationcanvas_ref 131008
-  yz 199 2015 msg operation_ref 128960 // "Classe()"
+  yz 196 2015 msg operation_ref 128960 // "Classe()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 380 178
+  label_xy 380 175
 msg 131392 synchronous
   from durationcanvas_ref 131008
   to durationcanvas_ref 131264
-  yz 245 2020 msg operation_ref 129088 // "listeEtudiants()"
+  yz 242 2020 msg operation_ref 129088 // "listeEtudiants()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 469 224
+  label_xy 469 221
 msg 131648 synchronous
   from durationcanvas_ref 131008
   to durationcanvas_ref 131520
-  yz 232 2025 msg operation_ref 129216 // "afficherListeEtudiants()"
+  yz 229 2025 msg operation_ref 129216 // "afficherListeEtudiants()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 294 210
-msg 132032 synchronous
+  label_xy 294 207
+msg 132032 asynchronous
   from durationcanvas_ref 131776
   to durationcanvas_ref 131904
-  yz 310 2015 msg operation_ref 129344 // "btnEtudiant()"
+  yz 262 2015 msg operation_ref 129344 // "btnEtudiant()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 189 290
-msg 132416 synchronous
+  label_xy 189 242
+msg 132416 asynchronous
   from durationcanvas_ref 132160
   to durationcanvas_ref 132288
-  yz 384 2015 msg operation_ref 129472 // "deplacerCurseur()"
+  yz 405 2015 msg operation_ref 129472 // "deplacerCurseur()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 155 363
-msg 132672 synchronous
-  from durationcanvas_ref 131008
-  to durationcanvas_ref 132544
-  yz 271 2015 msg operation_ref 129728 // "afficherCriteres()"
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 315 249
-msg 132928 synchronous
-  from durationcanvas_ref 131008
-  to durationcanvas_ref 132800
-  yz 210 2020 msg operation_ref 129600 // "listeCriteres()"
-  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 477 188
+  label_xy 155 384
 msg 133568 asynchronous
   from durationcanvas_ref 133312
   to durationcanvas_ref 133440
-  yz 457 2030 msg operation_ref 129856 // "btnValider()"
+  yz 478 2030 msg operation_ref 129856 // "btnValider()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 192 437
+  label_xy 192 458
 msg 133824 synchronous
   from durationcanvas_ref 133440
   to durationcanvas_ref 133696
-  yz 466 2015 msg operation_ref 129984 // "validerCompétences()"
+  yz 491 2015 msg operation_ref 129984 // "validerCompétences()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 296 448
+  label_xy 296 473
 msg 134080 synchronous
   from durationcanvas_ref 133696
   to durationcanvas_ref 133952
-  yz 478 2020 msg operation_ref 130112 // "enregistrerCompétences()"
+  yz 503 2020 msg operation_ref 130112 // "enregistrerCompétences()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
-  label_xy 436 456
+  label_xy 464 481
+msg 134336 synchronous
+  from durationcanvas_ref 131904
+  to durationcanvas_ref 134208
+  yz 279 2015 msg operation_ref 180672 // "Devoir()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 387 260
+msg 134592 synchronous
+  from durationcanvas_ref 134208
+  to durationcanvas_ref 134464
+  yz 294 2020 msg operation_ref 130624 // "listeDevoirs()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 478 275
+msg 134976 asynchronous
+  from durationcanvas_ref 134720
+  to durationcanvas_ref 134848
+  yz 316 2015 msg operation_ref 180800 // "btDevoir()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 131 297
+msg 135232 synchronous
+  from durationcanvas_ref 134848
+  to durationcanvas_ref 135104
+  yz 336 2015 msg operation_ref 180928 // "criteresCoef()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 350 317
+msg 135488 synchronous
+  from durationcanvas_ref 135104
+  to durationcanvas_ref 135360
+  yz 351 2020 msg operation_ref 181056 // "listeCritCoef()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 476 332
+msg 136000 synchronous
+  from durationcanvas_ref 133696
+  to durationcanvas_ref 135872
+  yz 528 2025 msg operation_ref 167104 // "montrer()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 288 509
+msg 136256 synchronous
+  from durationcanvas_ref 133696
+  to durationcanvas_ref 136128
+  yz 560 2015 msg operation_ref 181312 // "cacher()"
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+  label_xy 343 541
 end

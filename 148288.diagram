@@ -3,7 +3,7 @@ format 221
 classinstance 128064 class_ref 134848 // IhmAccueil
   name ""   xyz 160.9 4 2000 life_line_z 2000
 classinstance 128192 class_ref 128064 // Enseignant
-  name ""   xyz 2.7 3.6 2000 life_line_z 2000
+  name ""   xyz 2.7 4 2000 life_line_z 2000
 classinstance 128320 class_ref 134976 // EvaluationTP
   name ""   xyz 419.5 4 2000 life_line_z 2000
 classinstance 129088 class_ref 142016 // IhmCreerDevoir
@@ -12,40 +12,40 @@ fragment 130880 "loop"
   xyzwh 18.4 239 1995 334 72
 end
 textcanvas 131008 "Pour chaque classe concernée"
-  xyzwh 56.9 287.9 2000 207 52
+  xyzwh 56 287 2000 207 52
 classinstance 131520 class_ref 128192 // BDD
   name ""   xyz 592.7 4 2000 life_line_z 2000
 fragment 133696 "loop"
   xyzwh 18.4 419.1 1995 335 114
 end
 textcanvas 133824 "Pour chaque critère"
-  xyzwh 58.2 510 2000 129 29
+  xyzwh 58 510 2000 129 29
 durationcanvas 128448 classinstance_ref 128064 // :IhmAccueil
-  xyzwh 198 69.2 2010 11 28
+  xyzwh 198 69 2010 11 28
 end
 durationcanvas 128576 classinstance_ref 128192 // :Enseignant
-  xyzwh 37 69.1 2010 11 25
+  xyzwh 37 69 2010 11 25
 end
 durationcanvas 128704 classinstance_ref 128320 // :EvaluationTP
-  xyzwh 464 73 2010 11 156
+  xyzwh 465 73 2010 11 156
 end
 durationcanvas 129216 classinstance_ref 129088 // :IhmCreerDevoir
-  xyzwh 333 102.4 2010 11 25
+  xyzwh 333 102 2010 11 25
 end
 durationcanvas 129472 classinstance_ref 128064 // :IhmAccueil
-  xyzwh 198 132.4 2010 11 25
+  xyzwh 198 132 2010 11 25
 end
 durationcanvas 131648 classinstance_ref 131520 // :BDD
-  xyzwh 611 150.2 2010 11 25
+  xyzwh 611 150 2010 11 25
 end
 durationcanvas 131904 classinstance_ref 129088 // :IhmCreerDevoir
-  xyzwh 333 167.9 2010 11 25
+  xyzwh 333 167 2010 11 25
 end
 durationcanvas 132928 classinstance_ref 128192 // :Enseignant
-  xyzwh 37 274.1 2010 11 25
+  xyzwh 37 274 2010 11 25
 end
 durationcanvas 133056 classinstance_ref 129088 // :IhmCreerDevoir
-  xyzwh 333 274.1 2010 11 26
+  xyzwh 333 274 2010 11 26
 end
 durationcanvas 133312 classinstance_ref 128192 // :Enseignant
   xyzwh 37 453 2010 11 25
@@ -54,28 +54,28 @@ durationcanvas 133440 classinstance_ref 129088 // :IhmCreerDevoir
   xyzwh 333 453 2010 11 26
 end
 durationcanvas 133952 classinstance_ref 128192 // :Enseignant
-  xyzwh 37 497.4 2010 11 26
+  xyzwh 37 497 2010 11 26
 end
 durationcanvas 134080 classinstance_ref 129088 // :IhmCreerDevoir
-  xyzwh 333 498.6 2010 11 25
+  xyzwh 333 498 2010 11 25
 end
 durationcanvas 134336 classinstance_ref 128192 // :Enseignant
-  xyzwh 37 619.6 2010 11 25
+  xyzwh 37 619 2010 11 25
 end
 durationcanvas 134464 classinstance_ref 129088 // :IhmCreerDevoir
-  xyzwh 333 619.6 2010 11 25
+  xyzwh 333 619 2010 11 25
 end
 durationcanvas 134720 classinstance_ref 128320 // :EvaluationTP
-  xyzwh 464 631.5 2010 11 99
+  xyzwh 465 631 2010 11 99
 end
 durationcanvas 134976 classinstance_ref 131520 // :BDD
-  xyzwh 611 640.7 2010 11 25
+  xyzwh 611 640 2010 11 25
 end
 durationcanvas 135232 classinstance_ref 128192 // :Enseignant
-  xyzwh 37 335.2 2010 11 25
+  xyzwh 37 335 2010 11 25
 end
 durationcanvas 135360 classinstance_ref 129088 // :IhmCreerDevoir
-  xyzwh 333 335.2 2010 11 25
+  xyzwh 333 335 2010 11 25
 end
 durationcanvas 135616 classinstance_ref 128192 // :Enseignant
   xyzwh 37 382 2010 11 25
@@ -87,18 +87,18 @@ durationcanvas 136000 classinstance_ref 128192 // :Enseignant
   xyzwh 37 563 2010 11 25
 end
 durationcanvas 136384 classinstance_ref 128064 // :IhmAccueil
-  xyzwh 198 669.6 2010 11 25
+  xyzwh 198 669 2010 11 25
 end
 durationcanvas 136640 classinstance_ref 129088 // :IhmCreerDevoir
-  xyzwh 333 704.1 2010 11 25
+  xyzwh 333 704 2010 11 25
 end
 durationcanvas 136896 classinstance_ref 131520 // :BDD
-  xyzwh 611 192.4 2010 11 26
+  xyzwh 611 192 2010 11 26
 end
 durationcanvas 137152 classinstance_ref 129088 // :IhmCreerDevoir
-  xyzwh 333 209.1 2010 11 26
+  xyzwh 333 209 2010 11 26
 end
-lostfoundmsgsupport 136128 xyz 412.6 565.133 2015
+lostfoundmsgsupport 136128 xyz 412 565 2015
 msg 128832 asynchronous
   from durationcanvas_ref 128576
   to durationcanvas_ref 128448
@@ -177,7 +177,7 @@ msg 135488 asynchronous
   yz 336 2015 msg operation_ref 140608 // "selectionType()"
   show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
   label_xy 142 314
-msg 135872 synchronous
+msg 135872 asynchronous
   from durationcanvas_ref 135616
   to durationcanvas_ref 135744
   yz 381 2015 msg operation_ref 140736 // "saisirTitre()"

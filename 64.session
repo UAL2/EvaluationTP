@@ -1,13 +1,9 @@
-window_sizes 1920 1016 378 1536 889 68
+window_sizes 1366 704 378 982 577 68
 cleanlooks_style
 show_stereotypes
 selected 
   package_ref 129 // EvaluationTP
 open
-  classview_ref 134592 // bdd
-  usecase_ref 128704 // Créer des critères
-  usecase_ref 129088 // Créer d'un devoir
-  class_ref 142016 // IhmCreerDevoir
   
   package_ref 134592 // vues
 end
